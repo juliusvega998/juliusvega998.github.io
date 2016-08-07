@@ -7,73 +7,75 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="resources/css/main.css" />
 </head>
-<body>
+<body class="purple darken-4">
     <nav class="purple darken-4">
         <div class="nav-wrapper">
             <a href="../index.html" class="brand-logo" id="logo">friedster</a>
             <ul class="right">
-                <li><a href="#"><i class="material-icons">home</i></a></li>
-                <li><a href="#"><i class="material-icons">settings</i></a></li>
-                <li><a href="#"><i class="material-icons">exit_to_app</i></a></li>
+                <li><a href="../index.html"><i class="material-icons left">home</i> Home</a></li>
+                <li class="active"><a href="#"><i class="material-icons left">announcement</i> Notification</a></li>
+                <li><a href="../index.html"><i class="material-icons left">exit_to_app</i> Log-out</a></li>
             </ul>
         </div>
     </nav>
 
-    <div class="container">
-        <div class="row">
-            <div class="col s12">
-                <div class="card">
-                    <div class="card-image">
-                        <a href="http://i.imgur.com/A4G7i9H.jpg">
-                            <img src="http://i.imgur.com/A4G7i9H.jpg" id="picture" />
-                        </a>
-                        <span class="card-title"> Carmen Rebulanan's Photo </span>
-                    </div>
-                    <div class="card-content">
-                        <h5>Such a cute dog :3</h5>
-                        <p class="postedat">August 13, 2004</p>
+    <div class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <div class="card">
+                        <div class="card-image">
+                            <a href="http://i.imgur.com/A4G7i9H.jpg">
+                                <img src="http://i.imgur.com/A4G7i9H.jpg" id="picture" />
+                            </a>
+                            <span class="card-title"> Carmen Rebulanan's Photo </span>
+                        </div>
+                        <div class="card-content">
+                            <h5>Such a cute dog :3</h5>
+                            <p class="postedat">August 13, 2004</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="row" id="comments">
-        </div>
+            <div class="row" id="comments">
+            </div>
 
-        <div class="row">
-            <div class="col s12">
-                <div class="card">
-                    <div class="row card-content" id="post-area">
-                        <form class="row col s12">
-                            <div class="input-field col s6">
-                                <input id="name" type="text" />
-                                <label for="name">Name</label>
-                            </div>
-                            <div class="input-field col s12">
-                                <textarea id="comment" class="materialize-textarea"></textarea>
-                                <label for="comment">Comment</label>
-                            </div>
-                            <div class="col s12">
-                                <input type="checkbox" id="permanent">
-                                <label for="permanent">Make it permanent</label>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="card-action">
-                        <a href="#comments" id="post" class="waves-effect waves-light btn orange accent-4">
-                            post
-                        </a>
-                        <a href="#comments" id="clear" class="waves-effect waves-light btn orange accent-4">
-                            clear
-                        </a>
+            <div class="row">
+                <div class="col s12">
+                    <div class="card">
+                        <div class="row card-content" id="post-area">
+                            <form class="row col s12">
+                                <div class="input-field col s6">
+                                    <input id="name" type="text" />
+                                    <label for="name">Name</label>
+                                </div>
+                                <div class="input-field col s12">
+                                    <textarea id="comment" class="materialize-textarea"></textarea>
+                                    <label for="comment">Comment</label>
+                                </div>
+                                <div class="col s12">
+                                    <input type="checkbox" id="permanent">
+                                    <label for="permanent">Make it permanent</label>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="card-action">
+                            <a href="#comments" id="post" class="waves-effect waves-light btn orange accent-4">
+                                post
+                            </a>
+                            <a href="#comments" id="clear" class="waves-effect waves-light btn orange accent-4">
+                                clear
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <footer class="purple darken-4 center white-text">
-        &copy; 2016 By Julius Vega. This page is created to demonstrate Cross Site Scripting (XSS). <br />
+    <footer class="center white-text">
+        Copyright &copy; 2016 By Julius Vega. This page is created to demonstrate Cross Site Scripting (XSS). <br />
         The image used in this site came from <a href="https://redd.it/3i9d43">here</a>.
     </footer>
 

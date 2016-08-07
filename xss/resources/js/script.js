@@ -1,5 +1,7 @@
 let posts = [];
 $(document).ready(function () {
+	$('.tooltipped').tooltip({delay: 50});
+	
 	if(localStorage.posts) {
 		posts = JSON.parse(localStorage.posts);
 		insertAll();
