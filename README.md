@@ -1,0 +1,1 @@
+# kintetsu998.github.io
