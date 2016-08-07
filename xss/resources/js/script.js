@@ -15,6 +15,9 @@ $('#post').click(function () {
 	}
 
 	insert(post);
+
+	$("#name").val("");
+	$("#comment").val("");
 });
 
 $('#clear').click(function () {
