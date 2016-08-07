@@ -1,0 +1,52 @@
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-color: #CCCCCC;
+}
+
+a#logo {
+	font-family: 'Pacifico', serif;
+	padding-left: 1%;
+}
+
+img#picture {
+	width: 100%;
+	height: auto;
+}
+
+p.postedat {
+	font-size: 50%;
+	color: #333333;
+}
+
+p.poster {
+	font-weight: 900;
+}
+
+#post-area {
+	margin-bottom: 0px;
+	padding-bottom: 10px !important;
+}
+
+.materialize-textarea {
+	margin-bottom: 0px
+}
+
+#card-action {
+	padding-top: 10px !important;
+}
+
+form.row {
+	margin-bottom: 0px;
+}
+
+img.dp {
+	width: 100% !important;
+	height: auto;
+}
+
+#dp-holder {
+	max-width: 15% !important;
+}
