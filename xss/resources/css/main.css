@@ -50,3 +50,11 @@ img.dp {
 #dp-holder {
 	max-width: 15% !important;
 }
+
+footer {
+	font-size: 75%;
+}
+
+footer > a {
+	color: white;
+}
