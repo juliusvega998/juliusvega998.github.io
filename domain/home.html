@@ -1,0 +1,923 @@
+<!--
+    UP CIEM Website v.1
+    Developers: ACSS - UPLB
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>UP CIEM | Home</title>
+        <link rel="shortcut icon" href="resources/images/logos/favicon.ico" type="image/x-icon">
+
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="resources/css/materialize.min.css"  media="screen,projection"/>
+        <link href="resources/css/custom.css" rel="stylesheet">
+        <link href="resources/css/section-scroll.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+        <!--Let browser know website is optimized for mobile-->
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"/> -->
+
+        <!--Import jQuery before materialize.js-->
+        <script type="text/javascript" src="resources/js/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript" src="resources/js/home.js"></script>
+        <script src="resources/js/materialize.min.js"></script>
+        <script src="resources/js/jquery.panelSnap.js"></script>
+        <script type="text/javascript" src="resources/js/jquery.section-scroll.js"></script>
+
+    </head>
+    <body>
+        <header>
+            <div class="navbar-fixed">
+                <nav class="transp" id="m">
+                    <div class="nav-wrapper main-nav">
+                        <a href="home.html" class="brand-logo brand-logo-domain"><img src="resources/images/logos/logo.png"></a>
+                        <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+                        <ul class="browser right hide-on-med-and-down links">
+                            <li class="current active"><a href="#!" class="grey-text text-lighten-3 dropdown-button" data-activates="dropdown" data-beloworigin="true">ABOUT US</a></li>
+                            <li><a href="ciem-news/index.php" class="grey-text text-lighten-3">NEWS</a></li>
+                            <li><a href="events.html" class="grey-text text-lighten-3">PROJECTS & EVENTS</a></li>
+                            <li><a href="../subdomain/ieshikawa.html" class="grey-text text-lighten-3">IESHIKAWA</a></li>
+                            <li><a href="apply.html" class="grey-text text-lighten-3">APPLY</a></li>
+                            <li><a href="corporate-sponsor.html" class="grey-text text-lighten-3">CORPORATE SPONSORS</a></li>
+                            <li><a href="contact_us.html" class="grey-text text-lighten-3">CONTACT US</a></li>
+                        </ul>
+                        <ul id="dropdown" class="browser dropdown-content dropmenu">
+                            <div class="triangle"></div>
+                            <div class="dropdown-links-container">
+                                <li><a href="home.html#slider-photo">HOME</a></li>
+                                <li><a href="home.html#the-org">THE ORGANIZATION</a></li>
+                                <li><a href="home.html#history">HISTORY</a></li>
+                                <li><a href="home.html#event">EVENTS</a></li>
+                                <li><a href="home.html#members">THE MEMBERS</a></li>
+                                <li><a href="home.html#officers">THE OFFICERS</a></li>
+                                <li><a href="home.html#core-team">THE CORE TEAM</a></li>
+                            </div>
+                        </ul>
+
+                        <!-- FOR MOBILE -->
+                        <ul id="slide-out" class="mobile side-nav" >
+                            <li class="no-padding">
+                                <ul class="collapsible collapsible-accordion">
+                                    <li>
+                                    <a class="collapsible-header active waves-effect waves-teal">ABOUT US<i class="mdi-navigation-arrow-drop-down right"></i></a>
+                                        <div class="collapsible-body">
+                                            <ul class="smallfont">
+                                                <li><a href="home.html#slider-photo">HOME</a></li>
+                                                <li><a href="home.html#the-org">THE ORGANIZATION</a></li>
+                                                <li><a href="home.html#history">HISTORY</a></li>
+                                                <li><a href="home.html#event">EVENTS</a></li>
+                                                <li><a href="home.html#members">THE MEMBERS</a></li>
+                                                <li><a href="home.html#officers">THE OFFICERS</a></li>
+                                                <li><a href="home.html#core-team">THE CORE TEAM</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="news.html" class="waves-effect waves-teal">NEWS</a></li>
+                            <li><a href="events.html" class="waves-effect waves-teal">PROJECTS & EVENTS</a></li>
+                            <li><a href="../subdomain/ieshikawa.html" class="waves-effect waves-teal">IESHIKAWA</a></li>
+                            <li><a href="apply.html" class="waves-effect waves-teal">APPLY</a></li>
+                            <li><a href="corporate-sponsor.html" class="waves-effect waves-teal">CORPORATE SPONSORS</a></li>
+                            <li><a href="contact_us.html" class="waves-effect waves-teal">CONTACT US</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <!-- HOME -->
+        <div data-spy="affix" id="dot-nav">
+            <ul>
+              <li class="awesome-tooltip toWhite tooltipped target active" data-position="left" data-delay="0" data-tooltip="Home"><a href="section#home"></a></li>
+              <li class="awesome-tooltip tooltipped target" data-position="left" data-delay="0" data-tooltip="The Organization"><a href="section#the-org"></a></li>
+              <li class="awesome-tooltip tooltipped target" data-position="left" data-delay="0" data-tooltip="History"><a href="section#history"></a></li>
+              <li class="awesome-tooltip tooltipped target" data-position="left" data-delay="0" data-tooltip="Events"><a href="section#event"></a></li>
+              <li class="awesome-tooltip tooltipped target" data-position="left" data-delay="0" data-tooltip="Our Members"><a href="section#members"></a></li>
+              <li class="awesome-tooltip tooltipped target" data-position="left" data-delay="0" data-tooltip="The Executive Board"><a href="section#officers"></a></li>
+              <li class="awesome-tooltip tooltipped target" data-position="left" data-delay="0" data-tooltip="The Core Team"><a href="section#core-team"></a></li>
+            </ul>
+        </div>
+
+  <section class="home" id="home">
+    <div class="slider fullscreen" id="slider-photo">
+      <ul class="slides">
+        <li>
+          <div class="caption center-align">
+            <div class="row">
+              <div class="col s12">
+                <p class="title flow-text">ONE CIRCLE. ONE FAMILY.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12">
+                <p class="subtitle flow-text univ">UNIVERSITY OF THE PHILIPPINES</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12">
+                <p class="subtitle flow-text bold">CIRCLE OF INDUSTRIAL ENGINEERING MAJORS</p>
+              </div>
+            </div>
+          </div>
+          <img src="resources/images/home.jpg" id="home-coverphoto">
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- THE ORGANIZATION -->
+  <section class="the-org org-m" id="the-org">
+    <div class="row org-column">
+      <div class="col l6 m12 s12">
+        <h1 class="heading gotham-book">The Organization</h1>
+        <p class="desc gotham-light flow-text">
+          The University of the Philippines Circle of Industrial Engineering Majors (UP CIEM) is a duly recognized academic organization based under the Department of Industrial Engineering and Operations Research, College of Engineering, UP Diliman. Upholding the holistic development of its members, UP CIEM consistently made its mark through rendering service to the college, the university and the country.
+        </p>
+      </div>
+      <div class="col l6 m12 s12">
+        <p class="desc gotham-light flow-text">
+          The organization has a clear vision for its members. First, to notice that the organization is more than just a collection of people. Next is, to realize that being a member of CIEM gives them the the opportunity to discover the boundaries of their personality and become an even better version of themselves. And lastly, to be humble, not one that bows their head and keeps their opinion to themselves, but one who has dignity and is able to stand and lead a crowd without having to step on another person.  More than being an organization, UP CIEM continues to be the family of camaraderie and trust for the Industrial Engineering student body and the sanctuary of excellent Industrial Engineers for the nation's future. <br><br>
+          This is UP CIEM - One Circle, One Family.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12">
+        <img src="resources/images/the_org.jpg">
+      </div>
+    </div>
+  </section>
+
+  <!-- HISTORY -->
+  <section class="history-m" id="history">
+    <div class="row">
+      <!-- <div class="col m12 l7"></div> -->
+      <div class="col m12 l5 offset-l7 history-contnt">
+        <h1 class="gotham-book">HISTORY</h1>
+        <p class="gotham-light flow-text">
+          The University of the Philippines Circle of Industrial Engineering Majors (UP CIEM) was established on November 23, 1976 by a group of students from the Department of Industrial Engineering and Operations Research, College of Engineering at the University of the Philippines, Diliman (UP Diliman). Over the years, UP CIEM has grown from a fledging organization to a force that reckoned with not only in academics but in sports, social activities and leadership as well. The business of UP CIEM never falls short of the foundations of Industrial Engineering - effectiveness, efficiency, and productivity.
+          <br /><br />
+          With 38 years of significant existence in the UP College of Engineering, UP CIEM chooses no other path but to advance excellence in the grandest manner. UP CIEM remains true to its foundation, providing an organization of support, assistance and relationships to the students.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVENTS -->
+  <section id="event">
+    <div class="row">
+      <!-- <div class="col m12 l7"></div> -->
+      <div class="col s12 m12 l5 event-contnt">
+        <h1 class="gotham-book">EVENTS</h1>
+        <h5>IEshikawa</h5>
+        <p class="gotham-light flow-text">
+          The initial ambition for the first IEshikawa was for it to be a seminar series which would reinforce the pre-existing acumen of industrial engineering students hailing from universities from the National Capital Region. Now, the next installment will accomodate more than 1000 participants from Luzon, Visayas, and Mindanao and it will not only review students of the prior know-how but the 10th instalment will impart unconventional insights and mystery on industrial engineering.
+        </p>
+        <a id="other-evnt" class="waves-effect waves-light btn-flat" href="temporary-main.html" >view other events</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- THE MEMBERS -->
+  <section class="members" id="members">
+
+    <div class="row image-top">
+      <img src="resources/images/committee_banner.jpg">
+    </div>
+    <div class="title">
+      <div class="row">
+        <h1 class="flow-text">OUR MEMBERS</h1>
+      </div>
+    </div>
+    <div class="row row-desc">
+      <div id="icon-com" class="col s12 l12">
+        <div class="row">
+          <div id="comm_acad" class="comm_radio col s2 offset-s3 m1 offset-m3 l1 offset-l3"><img src="resources/images/logos/comm_acad.png"></div>
+          <div id="comm_exte" class="comm_radio col s2 m1 l1"><img src="resources/images/logos/comm_exte_l.png"></div>
+          <div id="comm_fin" class="comm_radio col s2 m1 l1"><img src="resources/images/logos/comm_fin_l.png"></div>
+          <div id="comm_inte" class="comm_radio col s2 offset-s3 m1 l1"><img src="resources/images/logos/comm_inte_l.png"></div>
+          <div id="comm_memrec" class="comm_radio col s2 m1 l1"><img src="resources/images/logos/comm_memrec_l.png"></div>
+          <div id="comm_pubrec" class="comm_radio col s2 m1 l1"><img src="resources/images/logos/comm_pubrec_l.png"></div>
+        </div>
+      </div>
+      <div class="col s12 l12 team-desc">
+        <div id="comm_acad_desc" class="committee-section">
+          <h5 class="committee-title">ACADEMIC AFFAIRS COMMITTEE</h5>
+          <p class="flow-text">
+           The Academic Affairs is committed to the embodiment of the value of excellence in the heart of its members. The committee aims to give access to a variety of quality academic materials to help facilitate the members' academics, to provide avenues of learning outside the walls of the classroom, and to preserve of its members' mental welfare.
+         </p>
+       </div>
+
+       <div id="comm_exte_desc" class="committee-section">
+        <h5 class="committee-title"> EXTERNAL AFFAIRS COMMITTEE </h5>
+        <p class="flow-text">
+         Extending the efforts of the organization to the college, the university, and the nation, the External Affairs Committee is the core of UP CIEM's development of cultural, political, and social awareness of its socially relevant members, thus, the organization's contribution to nation building. It is Exte that leads UP CIEM's initiative to develop harmonious external relations with other organizations and institutions, help communities, and reach the alumni of the organization, and initiate such projects.
+       </p>
+     </div>
+     <div id="comm_fin_desc" class="committee-section">
+      <h5 class="committee-title"> FINANCE COMMITTEE</h5>
+      <p class="flow-text">
+        The Finance Committee is in charge of strengthening the organization's financial resources and allocating its budget. It also manages the tangible assets of the organization
+      </p>
+    </div>
+    <div id="comm_inte_desc" class="committee-section">
+      <h5 class="committee-title"> INTERNAL AFFAIRS COMMITTEE</h5>
+      <p class="flow-text">
+        The Internal Affairs Committee's goal is to improve harmonious relationships among CIEMers. The committee facilitates various activities which aim to unite and brighten up everyone. Inte also protects the organization's tambayan through routine clean ups and renovation throughout the year. They also monitor each member, making sure everyone is doing well and satisfied with CIEM. They aim for one strong family.
+      </p>
+    </div>
+    <div id="comm_memrec_desc" class="committee-section">
+      <h5 class="committee-title"> MEMBERSHIP AND RECRUITMENT COMMITTEE</h5>
+      <p class="flow-text">
+        This committee adapts a forward-looking perspective as they track the performance of the current generation and train the next. The Membership and Recruitment Committee attract aspiring members and immerse them to the CIEM Culture. They are also in charge of the evaluation of the resident members to find areas of improvement towards a promising future for CIEM.
+      </p>
+    </div>
+    <div id="comm_pubrec_desc" class="committee-section">
+      <h5 class="committee-title"> PUBLICATIONS AND RECORDS COMMITTEE </h5>
+      <p class="flow-text">
+        The Publications and Records Committee spearheads the collection of all pertinent records of the organization and makes the necessary documents available to all its members. The committee is also in charge of the constant distribution of quality publications of the organization and ensuring the maintenance of the website.
+      </p>
+    </div>
+                    <!-- <div id="pubrec-com" class="committee-section">
+                        <h5 class="committee-title"> CREATIVES TEAM </h5>
+                        <p class="flow-text">
+                        The Creatives Team is the organization’s publicity team that conceptualizes and produces the publicity materials of all CIEM events and projects. The team ensures that quality publicity materials are used internal and external to the organization.
+                        </p>
+                      </div> -->
+                    <!-- <div id="pubrec-com" class="committee-section">
+                        <h5 class="committee-title"> MARKETING TEAM </h5>
+                        <p class="flow-text">
+                        The Marketing Team is the organization's corporate team that builds good relationship with partner organizations, sponsors, and companies. With this, the team ensures that there is a harmonious relationship between UP CIEM and its external stakeholders lifetime.
+                        </p>
+
+                      </div> -->
+                    </div>
+                  </div>
+                </section>
+
+                <!-- THE OFFICERS -->
+                <section class="officers section-height" id="officers">
+                  <h4 class="gotham-book  execb-title"> THE EXECUTIVE BOARD</h4>
+                  <h5 class="gotham-book AY"> A.Y. 2016-2017 </h5>
+                  <div id="officer-square">
+                    <div class="row">
+                      <div class="col l3 s6 m4">
+                        <div class="exec">
+                          <a href="" class="center-align">
+                            <img src="resources/images/profiles/Cuenca.jpg" class="exec-board-imgs">
+                            <div class="chair-email gotham-light">
+                              <a href="mailto:chairperson@upciem.org" target="_top">
+                                <img src="resources/images/logos/emailicon.png"><br/>
+                              </a>
+                              chairperson@upciem.org
+                            </div>
+                          </a>
+                        </div>
+                        <div class="l12 m12 s12">
+                          <h6 class="gotham-light hide-on-med-and-down "> CRESCENT CUENCA</h6>
+                          <h6 class="gotham-light hide-on-large-only smallername"  id="nameadjust"> CRESCENT CUENCA</h6>
+
+                          <h6 class="gotham-light">  </h6>
+                          <h6 class="gotham-light posi-lbl hide-on-med-and-down  "> Chairperson</h6>
+                          <h6 class="gotham-light hide-on-small-only smallerposi"> Chairperson </h6>
+                          <!-- <h6 class="gotham-light show-on-medium smallerposi"> Chairperson </h6> -->
+
+                        </div>
+                      </div>
+                      <div class="col l3 s6 m4">
+                        <div class="exec">
+                          <a href="">
+                            <img src="resources/images/profiles/Bonostro.jpg" class="exec-board-imgs">
+                            <div class="chair-email gotham-light">
+                              <a href="mailto:evc@upciem.org" target="_top">
+                                <img src="resources/images/logos/emailicon.png"><br/>
+                              </a>
+                              evc@upciem.org
+                            </div>
+                          </a>
+                        </div>
+                        <div class="l12 m12 s10">
+
+                          <h6 class="gotham-light hide-on-med-and-down" > JERIC BONOSTRO </h6>
+                          <h6 class="gotham-light hide-on-large-only smallername" > JERIC BONOSTRO </h6>
+                          <h6 class="gotham-light posi-lbl hide-on-med-and-down ">Executive Vice Chairperson</h6>
+                          <h6 class="gotham-light hide-on-small-only smallerposi"> Executive Vice Chairperson </h6>
+                          <!-- <h6 class="gotham-light show-on-medium smallerposi"> Executive Vice Chairperson </h6> -->
+
+                        </div>
+                      </div>
+                      <div class="col l3 s6 m4">
+                        <div class="exec">
+                          <a href="">
+                            <img src="resources/images/profiles/Galacio.jpg" class="exec-board-imgs">
+                            <div class="chair-email gotham-light">
+                              <a href="mailto:academic.affairs@upciem.org" target="_top">
+                                <img src="resources/images/logos/emailicon.png"><br/>
+                              </a>
+                              academic.affairs@upciem.org
+                            </div>
+                          </a>
+                        </div>
+                        <div class="l12 m12 s10">
+
+                          <h6 class="gotham-light hide-on-med-and-down" id="reighamed"> CHRISTIAN PHILLIP GALACIO</h6>
+                          <h6 class="gotham-light hide-on-large-only smallername" id="nameadjust"> CHRISTIAN PHILLIP GALACIO</h6>
+                          <h6 class="gotham-light posi-lbl  hide-on-med-and-down" >Vice Chairperson for Academic Affairs</h6>
+                          <h6 class="gotham-light hide-on-small-only smallerposi" > Vice Chairperson for Academic Affairs</h6>
+
+                        </div>
+                      </div>
+                      <div class="col l3 s6 m4">
+                        <div class="exec">
+                          <a href="">
+                            <img src="resources/images/profiles/Delacruz.jpg" class="exec-board-imgs">
+                            <div class="chair-email gotham-light">
+                              <a href="mailto:external.affairs@upciem.org" target="_top">
+                                <img src="resources/images/logos/emailicon.png"><br/>
+                              </a>
+                              external.affairs@upciem.org
+                            </div>
+                          </a>
+                        </div>
+                        <div class="l12 m10 s10">
+                          <h6 class="gotham-light hide-on-med-and-down" > DEEWA DELA CRUZ </h6>
+                          <h6 class="gotham-light hide-on-large-only smallername"> DEEWA DELA CRUZ </h6>
+
+                          <h6 class="gotham-light posi-lbl hide-on-med-and-down "> Officer-in-Charge for External Affairs</h6>
+                          <h6 class="gotham-light hide-on-small-only smallerposi"> Officer-in-Charge for External Affairs</h6>
+
+                        </div>
+
+                      </div>
+
+                      <div class="col l3 s6 m4">
+                        <div class="exec center-align">
+                          <a href="">
+                            <img src="resources/images/profiles/Notario.jpg" class="exec-board-imgs">
+                            <div class="chair-email gotham-light">
+                              <a href="mailto:finance@upciem.org" target="_top">
+                                <img src="resources/images/logos/emailicon.png"><br/>
+                              </a>
+                              finance@upciem.org
+                            </div>
+                          </a>
+                        </div>
+                        <div class="l12 m10 s10">
+                          <h6 class="gotham-light hide-on-med-and-down" > CHERRY ANNE NOTARIO </h6>
+                          <h6 class="gotham-light hide-on-large-only smallername"> CHERRY ANNE NOTARIO </h6>
+
+                          <h6 class="gotham-light posi-lbl hide-on-med-and-down "> Vice Chairperson for Finance</h6>
+                          <h6 class="gotham-light hide-on-small-only smallerposi"> Vice Chairperson for Finance</h6>
+
+                        </div>
+                      </div>
+                      <div class="col l3 s6 m4">
+                        <div class="exec">
+                          <a href="">
+                            <img src="resources/images/profiles/Senina.jpg" class="exec-board-imgs">
+                            <div class="chair-email gotham-light">
+                              <a href="mailto:internal.affairs@upciem.org" target="_top">
+                                <img src="resources/images/logos/emailicon.png"><br/>
+                              </a>
+                              internal.affairs@upciem.org
+                            </div>
+                          </a>
+                        </div>
+                        <div class="l12 m10 s10">
+                          <h6 class="gotham-light hide-on-med-and-down" > ANTHONY DALE SENINA </h6>
+                          <h6 class="gotham-light hide-on-large-only smallername"> ANTHONY DALE SENINA </h6>
+
+                          <h6 class="gotham-light posi-lbl hide-on-med-and-down"> Vice Chairperson for Internal Affairs</h6>
+                          <h6 class="gotham-light hide-on-small-only smallerposi"> Vice Chairperson for Internal Affairs</h6>
+
+                        </div>
+                      </div>
+                      <div class="col l3 s6 m4">
+                        <div class="exec">
+                          <a href="">
+                            <img src="resources/images/profiles/Burgos.jpg" class="exec-board-imgs">
+                            <div class="chair-email gotham-light">
+                              <a href="mailto:membership.recruitment@upciem.org" target="_top">
+                                <img src="resources/images/logos/emailicon.png"><br/>
+                              </a>
+                              membership.recruitment<br />@upciem.org
+                            </div>
+                          </a>
+                        </div>
+                        <div class="l12 m10 s10">
+                          <h6 class="gotham-light hide-on-med-and-down" > MA. ELIZABETH BURGOS </h6>
+                          <h6 class="gotham-light hide-on-large-only smallername"> MA. ELIZABETH BURGOS </h6>
+                          <h6 class="gotham-light posi-lbl hide-on-med-and-down "> Officer-in-Charge for Membership and Recruitment </h6>
+                          <h6 class="gotham-light hide-on-small-only smallerposi"> Officer-in-Charge for Membership and Recruitment</h6>
+
+                        </div>
+                      </div>
+                      <div class="col l3 s6 m4">
+                        <div class="exec">
+                          <a href="">
+                            <img src="resources/images/profiles/Rivera.jpg" class="exec-board-imgs">
+                            <div class="chair-email gotham-light">
+                              <a href="mailto:publications.records@upciem.org" target="_top">
+                                <img src="resources/images/logos/emailicon.png"><br/>
+                              </a>
+                              publications.records@upciem.org
+                            </div>
+                          </a>
+                        </div>
+                        <div class="l12 m10 s10">
+                          <h6 class="gotham-light hide-on-med-and-down" > MAURICE MITCHELL RIVERA </h6>
+                          <h6 class="gotham-light hide-on-large-only smallername"> MAURICE MITCHELL RIVERA </h6>
+                          <h6 class="gotham-light posi-lbl hide-on-med-and-down "> Vice Chairperson for Publications and Records</h6>
+                          <h6 class="gotham-light hide-on-small-only smallerposi"> Vice Chairperson Publications and Records</h6>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+
+                <!-- THE CORE TEAM -->
+                <section class="core-team" id="core-team">
+                  <h4 class="gotham-book coreteam-title">THE CORE TEAM</h4>
+                  <h5 class="gotham-book ay" > A.Y. 2016-2017 </h5>
+                  <div id="core-team">
+                    <div class="row">
+                      <div class="col s4 col-ct">
+                        <div class="col s12">
+                          <h5  class="gotham-book col-posi"> ACADEMIC AFFAIRS </h5>
+                        </div>
+                        <div class="row">
+                          <div class="col l5 m7 s10 ">
+                            <img src="resources/images/profiles/Banag.jpg" >
+                          </div>
+                          <div class="col l7 m12 s12 coreteam-label vertical-wrapper">
+                            <div class="hide-on-med-and-down ghost-br">
+                              <br />
+                              <br />
+
+                            </div>
+                            <h6 class="gotham-light coreteam-names hide-on-med-and-down valign"> KARL BENEDICT BANAG </h6>
+                            <h6 class="gotham-light coreteam-names hide-on-large-only smallername"> KARL BENEDICT BANAG </h6>
+
+                            <h6 class="gotham-light coreteam-posi hide-on-large-only  valign hide-on-small-only smallerposi"> Director for Academic Mentoring </h6>
+                            <h6 class="gotham-light coreteam-posi hide-on-med-and-down"> Director for Academic Mentoring </h6>
+                          </div>
+                        </div>
+                        <div class="row">
+                            <div class="col l5 m7 s10">
+                                <img src="resources/images/profiles/Chan.jpg" >
+                            </div>
+                            <div class="col l7 m12 s12 coreteam-label">
+                                <div class="hide-on-med-and-down ghost-br">
+                                  <br />
+                                  <br />
+                            </div>
+
+                            <h6 class="gotham-light coreteam-names hide-on-med-and-down valign"> ANICIA CHAN </h6>
+                            <h6 class="gotham-light coreteam-names hide-on-large-only smallername"> ANICIA CHAN </h6>
+                            <h6 class="gotham-light coreteam-posi hide-on-large-only  valign hide-on-small-only smallerposi"> Director for Academic Monitoring </h6>
+                            <h6 class="gotham-light coreteam-posi hide-on-med-and-down"> Director for Academic Monitoring </h6>
+
+                          </div>
+                        </div>
+                        <div class="row">
+                            <div class="col l5 m7 s10 ">
+                                <img src="resources/images/profiles/Uy.jpg" >
+                            </div>
+                               <div class="col l7 m12 s12 coreteam-label">
+                                <div class="hide-on-med-and-down ghost-br">
+                                  <br />
+                                  <br />
+                            </div>
+
+                            <h6 class="gotham-light coreteam-names hide-on-med-and-down valign"> CORINNE ANDREANA UY </h6>
+                            <h6 class="gotham-light coreteam-names hide-on-large-only smallername"> CORINNE ANDREANA UY </h6>
+                            <h6 class="gotham-light coreteam-posi hide-on-large-only  valign hide-on-small-only smallerposi"> Director for Academic Resources  </h6>
+                            <h6 class="gotham-light coreteam-posi hide-on-med-and-down"> Director for Academic Resources  </h6>
+
+
+                          </div>
+                        </div>
+                      </div>
+                    <div class="col s4 col-ct" id="col-ct2">
+
+                        <div class="col s12 ">
+                            <h5 class="gotham-book col-posi"> EXTERNAL AFFAIRS </h5>
+                        </div>
+                        <div class="row">
+                            <div class="col l5 m7 s10">
+                                <img src="resources/images/profiles/Aganad.jpg" >
+                            </div>
+                           <div class="col l7 m12 s12 coreteam-label">
+                                <div class="hide-on-med-and-down ghost-br">
+                                  <br />
+                                  <br />
+
+                            </div>
+                            <h6 class="gotham-light coreteam-names hide-on-med-and-down valign" id="roegene"> STEPHANIE AGANAD </h6>
+                            <h6 class="gotham-light coreteam-names hide-on-large-only smallername" id="roegene"> STEPHANIE AGANAD </h6>
+                            <h6 class="gotham-light coreteam-posi hide-on-large-only  valign hide-on-small-only smallerposi"> Director for Alumni Relations  </h6>
+                            <h6 class="gotham-light coreteam-posi hide-on-med-and-down"> Director for Alumni Relations  </h6>
+
+
+
+                          </div>
+                        </div>
+                        <div class="row">
+                            <div class="col l5 m7 s10">
+                                <img src="resources/images/profiles/Torniado.jpg" >
+                            </div>
+                           <div class="col l7 m12 s12 coreteam-label">
+                                <div class="hide-on-med-and-down ghost-br">
+                                  <br />
+                                  <br />
+
+                            </div>
+                            <h6 class="gotham-light coreteam-names hide-on-med-and-down valign" id="roegene"> CLEO BEVERLY TORNIADO </h6>
+                            <h6 class="gotham-light coreteam-names hide-on-large-only smallername" id="roegene"> CLEO BEVERLY TORNIADO </h6>
+                            <h6 class="gotham-light coreteam-posi hide-on-large-only  valign hide-on-small-only smallerposi"> Director for Community Affairs  </h6>
+                            <h6 class="gotham-light coreteam-posi hide-on-med-and-down"> Director for Community Affairs  </h6>
+
+
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col l5 m7 s10">
+                          	<img src="resources/images/profiles/Perez.jpg" >
+                          </div>
+                          <div class="col l7 m12 s12 coreteam-label vertical-wrapper">
+                            <div class="hide-on-med-and-down ghost-br">
+                              <br />
+                              <br />
+
+                            </div>
+                            <h6 class="gotham-light coreteam-names hide-on-med-and-down valign" id="roegene"> EMMANUEL JERRICO PEREZ </h6>
+                            <h6 class="gotham-light coreteam-names hide-on-large-only smallername" id="roegene"> EMMANUEL JERRICO PEREZ </h6>
+                            <h6 class="gotham-light coreteam-posi hide-on-large-only  valign hide-on-small-only smallerposi"> Director for Community Affairs  </h6>
+                            <h6 class="gotham-light coreteam-posi hide-on-med-and-down"> Director for  Special Events  </h6>
+
+
+                          </div>
+                        </div>
+                      </div>
+
+                    <div class="col s4 col-ct" id="col-ct3">
+
+                        <div class="col s12 ">
+                            <h5 class="gotham-book col-posi"> FINANCE </h5>
+                        </div>
+                        <div class="row">
+                            <div class="col l5 m7 s10">
+                                <img src="resources/images/profiles/Hadi.jpg" >
+                            </div>
+                           <div class="col l7 m12 s12 coreteam-label vertical-wrapper">
+                                <div class="hide-on-med-and-down ghost-br">
+                                  <br />
+                                  <br />
+
+                            </div>
+
+                            <h6 class="gotham-light coreteam-names hide-on-med-and-down valign" id="roegene"> MONICA ANGELINE HADI </h6>
+                            <h6 class="gotham-light coreteam-names hide-on-large-only smallername" id="roegene"> MONICA ANGELINE HADI </h6>
+                            <h6 class="gotham-light coreteam-posi hide-on-large-only  valign hide-on-small-only smallerposi"> Director for Community Affairs  </h6>
+                            <h6 class="gotham-light coreteam-posi hide-on-med-and-down"> Director for  Accounting  </h6>
+
+
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col l5 m7 s10">
+                            <img src="resources/images/profiles/Conol.jpg" >
+                          </div>
+                          <div class="col l7 m12 s12 coreteam-label vertical-wrapper">
+                            <div class="hide-on-med-and-down ghost-br">
+                              <br />
+                              <br />
+
+                            </div>
+                            <h6 class="gotham-light coreteam-names hide-on-med-and-down valign" id="roegene"> JULIUS KRISTIAN CONOL </h6>
+                            <h6 class="gotham-light coreteam-names hide-on-large-only smallername" id="roegene"> JULIUS KRISTIAN CONOL </h6>
+                            <h6 class="gotham-light coreteam-posi hide-on-large-only  valign hide-on-small-only smallerposi"> Director for Community Affairs  </h6>
+                            <h6 class="gotham-light coreteam-posi hide-on-med-and-down"> Director for  Logistics  </h6>
+
+
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col l5 m7 s10">
+                            <img src="resources/images/profiles/Ocampo.jpg" >
+                          </div>
+                          <div class="col l7 m12 s12 coreteam-label vertical-wrapper">
+                            <div class="hide-on-med-and-down ghost-br">
+                              <br />
+                              <br />
+
+                            </div>
+                            <h6 class="gotham-light coreteam-names hide-on-med-and-down valign" id="roegene"> CARLA OCAMPO </h6>
+                            <h6 class="gotham-light coreteam-names hide-on-large-only smallername" id="roegene"> CARLA OCAMPO </h6>
+                            <h6 class="gotham-light coreteam-posi hide-on-large-only  valign hide-on-small-only smallerposi"> Director for Community Affairs  </h6>
+                            <h6 class="gotham-light coreteam-posi hide-on-med-and-down"> Director for   Ways and Means  </h6>
+
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+
+                <!-- THE CORE TEAM -->
+                <section class="core-team" id="core-team">
+                  <h4 class="gotham-book coreteam-title">THE CORE TEAM</h4>
+                  <h5 class="gotham-book ay" > A.Y. 2016-2017 </h5>
+                  <div id="core-team">
+                    <div class="row">
+                      <div class="col s4 col-ct">
+                        <div class="row">
+                          <div class="col s12">
+                            <h5 class="gotham-book col-posi"> INTERNAL AFFAIRS </h5>
+                          </div>
+                          <div class="col l5 m7 s10">
+                            <img src="resources/images/profiles/Reyes.jpg" >
+                          </div>
+                          <div class="col l7 m12 s12 coreteam-label vertical-wrapper">
+                            <div class="hide-on-med-and-down ghost-br">
+                              <br />
+                              <br />
+
+                            </div>
+                            <h6 class="gotham-light coreteam-names hide-on-med-and-down valign"> JOHN ANJELO REYES </h6>
+                            <h6 class="gotham-light coreteam-names hide-on-large-only smallername">  JOHN ANJELO REYES </h6>
+                            <h6 class="gotham-light coreteam-posi hide-on-large-only  valign hide-on-small-only smallerposi"> Director for Academic Resources  </h6>
+                            <h6 class="gotham-light coreteam-posi hide-on-med-and-down"> Director for Lounge Management  </h6>
+
+
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col l5 m7 s10">
+                            <img src="resources/images/profiles/Magpantay.jpg" >
+                          </div>
+                          <div class="col l7 m12 s12 coreteam-label vertical-wrapper">
+                            <div class="hide-on-med-and-down ghost-br">
+                              <br />
+                              <br />
+
+                            </div>
+                            <h6 class="gotham-light coreteam-names hide-on-med-and-down valign"> AENNA MAE MAGPANTAY </h6>
+                            <h6 class="gotham-light coreteam-names hide-on-large-only smallername"> AENNA MAE MAGPANTAY </h6>
+                            <h6 class="gotham-light coreteam-posi hide-on-large-only  valign hide-on-small-only smallerposi"> Director for Members' Welfare  </h6>
+                            <h6 class="gotham-light coreteam-posi hide-on-med-and-down"> Director for Members' Welfare  </h6>
+
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col l5 m7 s10">
+                            <img src="resources/images/profiles/Valdez.jpg" >
+                          </div>
+                          <div class="col l7 m12 s12 coreteam-label vertical-wrapper">
+                            <div class="hide-on-med-and-down ghost-br">
+                              <br />
+                              <br />
+
+                            </div>
+                            <h6 class="gotham-light coreteam-names hide-on-med-and-down valign"> IVAN JOSEPH VALDEZ </h6>
+                            <h6 class="gotham-light coreteam-names hide-on-large-only smallername">  IVAN JOSEPH VALDEZ </h6>
+                            <h6 class="gotham-light coreteam-posi hide-on-large-only  valign hide-on-small-only smallerposi"> Director for Sports & Recreation  </h6>
+                            <h6 class="gotham-light coreteam-posi hide-on-med-and-down"> Director for Sports & Recreation  </h6>
+
+
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col s4 col-ct" id="col-ct2">
+                        <div class="row">
+                          <div class="col s12 ">
+                            <h5 class="gotham-book col-posi"> MEMBERSHIP AND RECRUITMENT </h5>
+                          </div>
+
+
+                          <div class="col l5 m7 s10">
+                            <img src="resources/images/profiles/Cruz.jpg" >
+                          </div>
+                          <div class="col l7 m12 s12 coreteam-label vertical-wrapper">
+                            <div class="hide-on-med-and-down ghost-br">
+                              <br />
+                              <br />
+
+                            </div>
+                            <h6 class="gotham-light coreteam-names hide-on-med-and-down valign">ROBIN CRUZ </h6>
+                            <h6 class="gotham-light coreteam-names hide-on-large-only smallername">  ROBIN CRUZ </h6>
+                            <h6 class="gotham-light coreteam-posi hide-on-large-only  valign hide-on-small-only smallerposi"> Director for Application Process  </h6>
+                            <h6 class="gotham-light coreteam-posi hide-on-med-and-down"> Director for Application Process  </h6>
+
+
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col l5 m7 s10">
+                            <img src="resources/images/profiles/Maligaya.jpg" >
+                          </div>
+                          <div class="col l7 m12 s12 coreteam-label vertical-wrapper">
+                            <div class="hide-on-med-and-down ghost-br">
+                              <br />
+                              <br />
+
+                            </div>
+                            <h6 class="gotham-light coreteam-names hide-on-med-and-down valign">VANN HAROLD MALIGAYA </h6>
+                            <h6 class="gotham-light coreteam-names hide-on-large-only smallername"> VANN HAROLD MALIGAYA </h6>
+                            <h6 class="gotham-light coreteam-posi hide-on-large-only  valign hide-on-small-only smallerposi"> Director for Membership Evaluation  </h6>
+                            <h6 class="gotham-light coreteam-posi hide-on-med-and-down"> Director for Membership Evaluation  </h6>
+
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col l5 m7 s10">
+                            <img src="resources/images/profiles/Romero.jpg" >
+                          </div>
+                          <div class="col l7 m12 s12 coreteam-label vertical-wrapper">
+                            <div class="hide-on-med-and-down ghost-br">
+                              <br />
+                              <br />
+
+                            </div>
+                            <h6 class="gotham-light coreteam-names hide-on-med-and-down valign"> RAMON MIGUEL ROMERO </h6>
+                            <h6 class="gotham-light coreteam-names hide-on-large-only smallername">  RAMON MIGUEL ROMERO </h6>
+                            <h6 class="gotham-light coreteam-posi hide-on-large-only  valign hide-on-small-only smallerposi"> Director for Recruitment  </h6>
+                            <h6 class="gotham-light coreteam-posi hide-on-med-and-down"> Director for Recruitment  </h6>
+
+
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col s4 col-ct" id="col-ct3">
+                        <div class="row">
+                          <div class="col s12 ">
+                            <h5 class="gotham-book col-posi"> PUBLICATIONS AND RECORDS </h5>
+                          </div>
+
+                          <div class="col l5 m7 s10">
+                            <img src="resources/images/profiles/Lor.JPG" >
+                          </div>
+                          <div class="col l7 m12 s12 coreteam-label vertical-wrapper">
+                            <div class="hide-on-med-and-down ghost-br">
+                              <br />
+                              <br />
+
+                            </div>
+                            <h6 class="gotham-light coreteam-names hide-on-med-and-down valign"> HARVEY LOR </h6>
+                            <h6 class="gotham-light coreteam-names hide-on-large-only smallername">  HARVEY LOR </h6>
+                            <h6 class="gotham-light coreteam-posi hide-on-large-only  valign hide-on-small-only smallerposi"> Director for Online Accounts  </h6>
+                            <h6 class="gotham-light coreteam-posi hide-on-med-and-down"> Director for Online Accounts  </h6>
+
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col l5 m7 s10">
+                            <img src="resources/images/profiles/Sobremonte.jpg" >
+                          </div>
+                          <div class="col l7 m12 s12 coreteam-label vertical-wrapper">
+                            <div class="hide-on-med-and-down ghost-br">
+                              <br />
+                              <br />
+
+                            </div>
+                            <h6 class="gotham-light coreteam-names hide-on-med-and-down valign">JOHN ROGER SOBREMONTE </h6>
+                            <h6 class="gotham-light coreteam-names hide-on-large-only smallername">  JOHN ROGER SOBREMONTE </h6>
+                            <h6 class="gotham-light coreteam-posi hide-on-large-only  valign hide-on-small-only smallerposi"> Director for Publications  </h6>
+                            <h6 class="gotham-light coreteam-posi hide-on-med-and-down"> Director for Publications </h6>
+
+
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col l5 m7 s10">
+                            <img src="resources/images/profiles/Sadava.jpg" >
+                          </div>
+                          <div class="col l7 m12 s12 coreteam-label vertical-wrapper">
+                            <div class="hide-on-med-and-down ghost-br">
+                              <br />
+                              <br />
+
+                            </div>
+                            <h6 class="gotham-light coreteam-names hide-on-med-and-down valign">  ERIKA PAULINE SADAVA </h6>
+                            <h6 class="gotham-light coreteam-names hide-on-large-only smallername">   ERIKA PAULINE SADAVA </h6>
+                            <h6 class="gotham-light coreteam-posi hide-on-large-only  valign hide-on-small-only smallerposi"> Director for Documentation </h6>
+                            <h6 class="gotham-light coreteam-posi hide-on-med-and-down"> Director for Documentation </h6>
+
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="core-team" id="core-team">
+            <h4 class="gotham-book coreteam-title">THE CORE TEAM</h4>
+            <h5 class="gotham-book AY" > A.Y. 2016-2017 </h5>
+            <div class="row">
+                <div class="col s12 adhoc-label">
+                    <h5 class="gotham-book col-posi" id="adhoc-title"> ADHOC TEAMS </h5>
+                </div>
+                <div class="row ">
+                    <div class="col s5 offset-s2 col-ct" id="adhoc1">
+                        <div class="row core-teams3">
+                          <div class="col l5 m7 s10">
+                            <img src="resources/images/profiles/Caballero.jpg" >
+                          </div>
+                          <div class="col l7 m12 s12 coreteam-label crtvteam-label2">
+
+                           <h6 class="gotham-light coreteam-names hide-on-med-and-down valign"> JANNICA ANGELA CABALLERO </h6>
+                           <h6 class="gotham-light coreteam-names hide-on-large-only smallername">  JANNICA ANGELA CABALLERO </h6>
+                           <h6 class="gotham-light coreteam-posi hide-on-large-only  valign hide-on-small-only smallerposi"> Creatives Team Head  </h6>
+                           <h6 class="gotham-light coreteam-posi hide-on-med-and-down"> Creatives Team Head  </h6>
+
+
+
+                         </div>
+                       </div>
+                     </div>
+                     <div class="col s5 col-ct" id="adhoc2">
+                      <div class="row core-teams3">
+                        <div class="col l5 m7 s10 ">
+                          <img src="resources/images/profiles/Sacramento.jpg" >
+                        </div>
+                        <div class="col l7 m12 s12 coreteam-label crtvteam-label2">
+
+                         <h6 class="gotham-light coreteam-names hide-on-med-and-down valign"> GERARD EDISON SACRAMENTO </h6>
+                         <h6 class="gotham-light coreteam-names hide-on-large-only smallername"> GERARD EDISON SACRAMENTO </h6>
+                         <h6 class="gotham-light coreteam-posi hide-on-large-only  valign hide-on-small-only smallerposi"> Marketing Team Head </h6>
+                         <h6 class="gotham-light coreteam-posi hide-on-med-and-down"> Marketing Team Head </h6>
+
+
+
+                       </div>
+                     </div>
+                   </div>
+
+                 </div>
+                 <div class="row valign-wrapper footer-contact-us gotham-light">
+
+                  <div class="row valign">
+                    <div class="col s12 ">
+                      <br />
+                    </div>
+                    <div class="col s12 ">
+                      <h5 id="contact-us-lbl"> Contact Us </h5>
+                    </div>
+                    <!-- <div class="col s12 m12 l12"> -->
+                    <div class="row valign">
+                      <div class="col s4 m4 l4 valign  borderright middle-col floatleft" id="left-col">
+                        <div class="hide-on-med-and-down">
+                          <a href="https://www.google.com.ph/maps/dir/''/3F+Lobby,+Melchor+Hall,+UP+Diliman+Quezon+City+Philippines+1101/@14.6564505,120.9996815,12z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x3397b766461754b1:0x396391ee76582ea3!2m2!1d121.069722!2d14.656461?hl=en" target="_blank"><img class="floatleft" src="resources/images/logos/map.png" ></a>
+                        </div>
+                        <a href="https://www.google.com.ph/maps/dir/''/3F+Lobby,+Melchor+Hall,+UP+Diliman+Quezon+City+Philippines+1101/@14.6564505,120.9996815,12z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x3397b766461754b1:0x396391ee76582ea3!2m2!1d121.069722!2d14.656461?hl=en" target="_blank"><h6 class="floatleft" id="point"> 3F Lobby, Melchor Hall, UP Diliman <br />
+                          Quezon City Philippines 1101</h6></a>
+
+                        </div>
+                        <div class="col s4 m4 l4  middle-col borderright">
+                          <div class="hide-on-small-only" id="icons-large">
+                            <a href="https://www.facebook.com/upciem" target="_blank"><img src="resources/images/logos/fb.png"></a>
+                            <a href="https://twitter.com/upciem" target="_blank"><img src="resources/images/logos/twitter.png" ></a>
+                            <a href="https://www.youtube.com/user/upciem" target="_blank"><img src="resources/images/logos/youtube.png" ></a>
+                          </div>
+                          <div class="hide-on-med-and-up " id="icons-small">
+
+                            <a href="https://www.facebook.com/upciem" target="_blank"><img src="resources/images/logos/fb.png"></a>
+                            <a href="https://twitter.com/upciem" target="_blank"><img src="resources/images/logos/twitter.png" ></a>
+                            <a href="https://www.youtube.com/user/upciem" target="_blank"><img src="resources/images/logos/youtube.png" ></a>
+                          </div>
+                          <div class="s4 m4 l4 hide-on-med-and-up">
+                            <br />
+                            <br />
+                            <br />
+                          </div>
+                        </div>
+                        <div class="col s4 m4 l4 middle-col floatleft" id="right-col">
+                          <div class="hide-on-med-and-down">
+                            <i class="small mdi-communication-email floatleft iconsicons " id="emailicon"></i>
+                          </div>
+                          <h6 class="floatleft" > executive.board@upciem.org</h6>
+                        </div>
+
+                      </div>
+
+                      <div class="col s12">
+                        <h5 id="all-rights-res"> University of the Phlippines Circle of Industrial Engineering Majors (UP CIEM)  <br /> All Rights Reserved 2015</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </section>
+      <footer>
+      </footer>
+    </body>
+</html>

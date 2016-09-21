@@ -1,0 +1,189 @@
+<!--
+	UP CIEM Website v.1
+	Developers: ACSS - UPLB
+-->
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>NEWS</title>
+		<link rel="shortcut icon" href="resources/images/logos/favicon.ico" type="image/x-icon">
+		<!--Import materialize.css-->
+		<link href="resources/css/custom.css" rel="stylesheet"> 	<!-- 	KEAN DAPATINUNA KO NG DECLARE TONG CUSTOM.CSS KASI MAY MGA INOVERRIDE AKO JAN. KUNG DI MAUUNA YUNG CUSTOM.CSS ANDAMING MASISIRA SA AKIN SALAMATSUUUU. KUNG MAY KAILANGAN AYUSIN SAYO IBALIK MO NLNG SA BABA SALAMATSSS - CHRIS -->
+		<link type="text/css" rel="stylesheet" href="resources/css/materialize.min.css"  media="screen,projection"/>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+		<!--Let browser know website is optimized for mobile-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<!--Import jQuery before materialize.js-->
+		<script type="text/javascript" src="resources/js/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="resources/js/materialize.min.js"></script>
+		<script src="resources/js/bootstrap.js"></script>
+
+		<style>
+			.newsHeader{
+				text-align: left;
+			}
+
+			.news{
+				margin-left: 8%;
+				width: 67%;
+				float: left;
+				padding: 0;
+			}
+
+			.photoContainer{
+				height: 700px;
+				float: left;
+				margin-right: 3%;
+				margin-left: 3%;
+				background: gray;
+				width: 19%
+			}
+
+			.photo{
+				margin-top: 3px;
+				width: 100%;
+				height: 150px;
+				background: black;
+			}
+
+			.title{
+				color: black;
+			}
+
+			.author{
+				color: black;
+			}
+
+			.newsArticle{
+				color: black;
+			}
+
+		</style>
+	</head>
+	<body>
+		<header>
+            <div class="navbar-fixed">
+                <nav class="transp" id="m">
+                    <div class="nav-wrapper main-nav">
+                        <a href="home.html" class="brand-logo brand-logo-domain"><img src="resources/images/logos/logo.png"></a>
+                        <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+                        <ul class="browser right hide-on-med-and-down links">
+                            <li><a href="#!" class="text-lighten-3 dropdown-button" data-activates="dropdown" data-beloworigin="true">ABOUT US</a></li>
+                            <li class="current active"><a href="temporary-main.html" class="text-lighten-3">NEWS</a></li>
+                            <li><a href="events.html" class="text-lighten-3">PROJECTS & EVENTS</a></li>
+                            <li><a href="../subdomain/ieshikawa.html" class="text-lighten-3">IESHIKAWA</a></li>
+                            <li><a href="Apply.html" class="text-lighten-3">APPLY</a></li>
+                            <li><a href="temporary-main.html" class="text-lighten-3">CORPORATE SPONSORS</a></li>
+                            <li><a href="contact_us.html" class="text-lighten-3">CONTACT US</a></li>
+                        </ul>
+                        <ul id="dropdown" class="browser dropdown-content dropmenu">
+                            <div class="triangle"></div>
+                            <div class="dropdown-links-container">
+                                <li><a href="home.html#slider-photo">HOME</a></li>
+                                <li><a href="home.html#the-org">THE ORGANIZATION</a></li>
+                                <li><a href="home.html#history">HISTORY</a></li>
+                                <li><a href="home.html#event">EVENTS</a></li>
+                                <li><a href="home.html#members">THE MEMBERS</a></li>
+                                <li><a href="home.html#officers">THE OFFICERS</a></li>
+                                <li><a href="home.html#core-team">THE CORE TEAM</a></li>
+                            </div>
+                        </ul>
+
+                        <!-- FOR MOBILE -->
+                        <ul id="slide-out" class="mobile side-nav">
+                            <li class="no-padding">
+                                <ul class="collapsible collapsible-accordion">
+                                    <li>
+                                    <a class="collapsible-header active waves-effect waves-teal">ABOUT US<i class="mdi-navigation-arrow-drop-down right"></i></a>
+                                        <div class="collapsible-body">
+                                            <ul class="smallfont">
+                                                <li><a href="home.html#slider-photo">HOME</a></li>
+                                                <li><a href="home.html#the-org">THE ORGANIZATION</a></li>
+                                                <li><a href="home.html#history">HISTORY</a></li>
+                                                <li><a href="home.html#event">EVENTS</a></li>
+                                                <li><a href="home.html#members">THE MEMBERS</a></li>
+                                                <li><a href="home.html#officers">THE OFFICERS</a></li>
+                                                <li><a href="home.html#core-team">THE CORE TEAM</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="news.html" class="waves-effect waves-teal">NEWS</a></li>
+                            <li><a href="events.html" class="waves-effect waves-teal">PROJECTS & EVENTS</a></li>
+                            <li><a href="../subdomain/ieshikawa.html" class="waves-effect waves-teal">IESHIKAWA</a></li>
+                            <li><a href="apply.html" class="waves-effect waves-teal">APPLY</a></li>
+                            <li><a href="corporate-sponsor.html" class="waves-effect waves-teal">CORPORATE SPONSORS</a></li>
+                            <li><a href="contact_us.html" class="waves-effect waves-teal">CONTACT US</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+		<!-- NEWS ARTICLE -->
+		<section class="the-org" id="the-org">
+			<div class = "row">
+				<div class="news">
+					<h3 class = "title">Detour 2</h3>
+					<h6 class = "author">By: Amiel Bellen | Photos: Caballero, Delos Reyes, & Rivera <br> 07-25-15 </h6>
+					<p class = "newsArticle">
+						UP CIEM held its second installment of Detour, an amazing race-like event, last July, 25, 2015. Unlike Detour 1 which focused on introducing different locations within and around the campus, Detour 2 gave the freshmen a chance to test their knowledge about various places in UP. <br><br>
+
+						The participating UP Diliman Industrial Engineering freshmen were grouped into three teams. Each team had one CIEMer as their guide in finishing the challenges that were given to them. There were several hidden stations within the campus, each of which had tasks that the freshmen had to do to enhance their intellectual and physical skills. The teams had to analyze and solve clues that were given to them in order to know where the stations were. <br><br>
+
+						Like any other race, the event ended with the announcement of winners. There were also some special awards such as Best Group Cheer, etc. IEshikawa shirts were given as prizes for the winners. As the day came to a close, the CIEMers had a little chit-chat with the freshmen over cold coffee - which were from our generous sponsor, Nescafe - and slices of pizza sa well. <br><br>
+
+						Do you know your university enough? Do you have what it takes to finish the race? Well, these freshmen certainly have it, and are now ready to face any challenges that UP colege life might throw at them.
+					</p>
+				</div>
+
+				<div class = "photoContainer">
+					<section>
+					<!--<div class = "gray lighten-5">
+						a
+					</div>-->
+						<div class = "photo">img1</div><br/>
+						<div class = "photo">img2</div><br/>
+						<div class = "photo">img3</div><br/>
+					</section>
+
+				</div>
+			</div>
+
+			<div class="bottom">
+			</div>
+		</section>
+
+		<footer>
+		</footer>
+
+		<!--SCRIPTS-->
+		<script src="http://code.jquery.com/jquery-2.1.4.min.min.js"></script>
+		<script src="resources/js/materialize.min.js"></script>
+		<script src="resources/js/jquery.panelSnap.js"></script>
+		<script>
+			$(function($) {
+				$('body').panelSnap();
+			});
+			$(document).ready(function(){
+				$('div.bottom').on('click',function(){
+					$('body').scrollTop($('body').scrollTop() + 100);
+				});
+			$('.dropdown-button').dropdown({
+	      inDuration: 300,
+	      outDuration: 225,
+	      constrain_width: false, // Does not change width of dropdown to that of the activator
+	      hover: true, // Activate on hover
+	      gutter: 0, // Spacing from edge
+	      belowOrigin: false // Displays dropdown below the button
+
+
+    	});
+
+			});
+		</script>
+	</body>
+</html>

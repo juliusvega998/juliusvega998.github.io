@@ -1,0 +1,112 @@
+html { 
+  background: url('../images/contactUs.png') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+    height: 100%;
+}
+
+section {
+    overflow: auto;
+}
+
+section#cover {
+    background: transparent;
+}
+
+section#cover > div {
+    text-align: center;
+}
+
+section#cover > div > p {
+    font-size: 0.75em;
+}
+
+div#form {
+    background-color: rgba(255, 255, 255, .2);
+    font-size: 1em;
+    width: 75%;
+    min-height: 14em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    color: white;
+    overflow-y: auto;
+}
+
+@media only screen and (max-width: 20px) {
+    section#cover h4{
+        margin-top: 2em;
+    }
+
+    div#form {
+        height: 30em;
+    }
+
+    div#form form textarea{
+        height: 15em;
+    }
+}
+
+
+div#form form label{
+    color: white;
+}
+
+div#form form button{
+    border: white solid 1px;
+    color: white;
+}
+
+form > div > p {
+    font-size: 2.5vh;
+}
+
+div#contact_info {
+	padding-top: 1em;		
+    width: 80%;
+}
+
+div#contact_info div.social div.social-icons img{
+    width: 1.5em !important;
+}
+
+div#contact_info > div.addr {
+    display: inline;
+}
+
+div#contact_info > div.addr p {
+    font-size: 2vh;
+}
+
+div#contact_info > div.social > div.row{
+    border-left: white solid 1px;
+    border-right: white solid 1px;
+    height: 100%;
+}
+
+div#contact_info > div.social img {
+    width: 2.5em;
+}
+
+div#contact_info > div.org-email p {
+    text-align: left;
+    font-size: 2.25vh;
+}
+
+div .links{
+	width: 100%
+}
+
+section#cover .white-text{
+	font-weight: normal;
+}
+
+div#contact_info div.social .row{
+    margin: 5px 0;
+}
+	

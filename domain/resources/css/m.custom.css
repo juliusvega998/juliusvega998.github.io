@@ -1,0 +1,190 @@
+/* FONT FACE DEFINTIONS */
+@import url(http://fonts.googleapis.com/css?family=Lato:300);
+
+html, body {
+  font-family: Lato;
+  height: 100%;
+}
+
+section {
+  min-height: 100%;
+}
+
+p {
+  color: black;
+}
+
+.header{
+  color: #6d82d1;
+}
+
+/************************************* <NAVBAR> **************************************/
+nav {
+  font-family: Lato;
+}
+
+nav.transp{
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: none;
+}
+
+nav.transp a.ciem-logo img{
+  -webkit-filter: invert(1);
+  filter: invert(1);
+}
+
+nav ul.mobile li a {
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+nav ul.mobile ul.smallfont li a{
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+nav .main-nav li.current,
+nav .sub-nav li.current {
+  height: 64px;
+  border-style: solid;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 3px;
+}
+
+nav .main-nav li.current {
+  border-bottom-color: #5E7EC1;
+}
+
+nav .sub-nav li.current {
+  border-bottom-color: #007072; /*0B768A*/
+}
+
+a.brand-logo img {
+  width: 3em;
+}
+
+a.brand-logo.ciem-logo img {
+  margin-top: -3px;
+}
+
+div.navbar-fixed {
+  height: 2.5em !important;
+}
+nav {
+  height: 2.5em !important;
+}
+
+a.brand-logo{
+  height: 2.5em !important;
+}
+
+nav a.button-collapse i{
+  line-height: 1.1em;
+  height: 1.1em;
+}
+
+nav .brand-logo-domain{
+  left: 50% !important;
+}
+a.brand-logo img{
+  width: 2em;
+}
+
+/************************************* <HOME> **************************************/
+section#one-circle {
+  height: calc(100% + 56px);
+  margin-top: -56px;
+  background-image: url("../images/home.jpg");
+  background-position: center;
+  background-size: cover
+}
+
+div#motto {
+  height: 100%;
+  color: white;
+}
+
+/************************************* <ORGANIZATION> **************************************/
+section#organization {
+  overflow: hidden;
+}
+
+img#org-img {
+  margin-left: -50%;
+  width: 200%;
+  height: auto;
+}
+
+/************************************* <HISTORY> **************************************/
+section#history {
+  background-image: url("../images/history.jpg");
+  background-position: left;
+  background-size: cover
+}
+
+div#hist-content {
+  background-color: white;
+}
+
+/************************************* <EVENTS> **************************************/
+section#events {
+  height: 110%;
+  overflow:hidden;
+}
+
+div#events-img-wrapper {
+  height: 30%;
+  background-image: url("../images/events.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+a#event-btn {
+  border: 1px solid black;
+}
+
+/************************************* <MEMBERS> **************************************/
+section#members {
+  height: 100%;
+}
+
+div#members-header {
+  height: 30%;
+  background-image: url("../images/committee_banner.jpg");
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+
+div#comm-logos {
+  margin-top: 5%;
+}
+
+img.comm-logo{
+  width: 90%;
+  height: auto;
+}
+/************************************* <EXECUTIVE TEAM> **************************************/
+section#exec-team {
+  height: 100%;
+}
+ul#mem-slider li div p, ul#mem-slider li div h6 {
+  margin: 0 0 0 0;
+}
+
+ul#mem-slider li div img {
+  width: 50%;
+  height: auto;
+}
+
+div.bx-viewport {
+  height: 100% !important;
+  box-shadow: 0 0 0 !important;
+  box-shadow: 0px !important;
+}
+
+div.mem-info {
+  margin-bottom: 10px;
+}
