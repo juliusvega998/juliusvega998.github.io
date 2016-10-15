@@ -184,7 +184,7 @@ ul#mem-slider li div p, ul#mem-slider li div h6 {
   margin: 0 0 0 0;
 }
 
-ul#mem-slider li div img {
+ul#exec-slider li div img {
   width: 50%;
   height: auto;
 }
@@ -197,4 +197,9 @@ div.bx-viewport {
 
 div.mem-info {
   margin-bottom: 10px;
+}
+
+ul#mem-slider li div img {
+  width: 25%;
+  height: auto;
 }
