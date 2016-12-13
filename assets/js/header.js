@@ -28,6 +28,6 @@ $(document).ready(function() {
 
 function activeNav(ctr) {
 	$(document).ready(function() {
-		console.log($('nav>ul>li:nth-child(' + ctr + ')>a').addClass('active'));
+		$('nav>ul>li:nth-child(' + ctr + ')>a').addClass('active');
 	});
 }
