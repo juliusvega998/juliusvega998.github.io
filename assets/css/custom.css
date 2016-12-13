@@ -6,19 +6,50 @@
 	#bab2b7 - light brown
 */
 
-h1, h2, h3, h4, h5, h6 {
-	font-family: 'Montserrat', sans-serif;
-	color: #124f90;
+html {
+  font-size: 14px;
 }
 
-p, a {
-	font-family: 'Open Sans', sans-serif;
-	color: #0d1121;
-	margin: 0 0 0 0;
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 28px;
+  }
 }
 
 body {
 	background-color: #d9d6d8;
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Montserrat', sans-serif;
+	color: #124f90;
+	margin-top: 1em;
+}
+
+p {
+	color: #0d1121;
+	margin: 0 0 0 0;
+}
+
+a:link, a:visited {
+	color: #7d8cbb;
+}
+
+.highlight {
+	font-weight: bold;
 }
 
 section {
@@ -63,4 +94,22 @@ nav#navbar > ul > li > a {
 
 a.active {
 	text-decoration: underline;
+}
+
+img#me {
+	width: auto;
+	height: auto;
+	border-radius: 100%;
+}
+
+p.tabbed {
+	margin-left: 2em;
+}
+
+p.right {
+	text-align: right;
+}
+
+p#shortcuts {
+	margin-top: 3em;
 }
