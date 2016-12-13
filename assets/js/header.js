@@ -10,7 +10,7 @@ $(document).ready(function() {
 		'<nav class=\'navbar navbar-light\' id=\'navbar\'>' +
 			'<ul class=\'nav navbar-nav\'>' +
 				'<li class=\'nav-item active\'>' +
-					'<a class=\'nav-link\' href=\'#\'>About myself</a>' +
+					'<a class=\'nav-link\' href=\'index.html\'>About myself</a>' +
 				'</li>' +
 				'<li class=\'nav-item\'>' +
 					'<a class=\'nav-link\' href=\'#\'>Projects</a>' +
