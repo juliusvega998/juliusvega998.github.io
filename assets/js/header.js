@@ -13,13 +13,13 @@ $(document).ready(function() {
 					'<a class=\'nav-link\' href=\'index.html\'>About myself</a>' +
 				'</li>' +
 				'<li class=\'nav-item\'>' +
-					'<a class=\'nav-link\' href=\'#\'>Projects</a>' +
+					'<a class=\'nav-link\' href=\'under-construction.html\'>Projects</a>' +
 				'</li>' +
 				'<li class=\'nav-item\'>' +
-					'<a class=\'nav-link\' href=\'#\'>Microsites</a>' +
+					'<a class=\'nav-link\' href=\'under-construction.html\'>Microsites</a>' +
 				'</li>' +
 				'<li class=\'nav-item\'>' +
-					'<a class=\'nav-link\' href=\'#\'>Contact me</a>' +
+					'<a class=\'nav-link\' href=\'under-construction.html\'>Contact me</a>' +
 				'</li>' +
 			'</ul>' +
 		'</nav>'
