@@ -3,7 +3,7 @@ $(document).ready(function() {
 		'<div id=\'banner-wrapper\'>' +
 			'<div class=\'row\'>' +
 				'<div class=\'col-sm-12\'>' +
-					'<img src=\'assets/img/banner.png\' class=\'img-fluid\' id=\'banner\'/>' +
+					'<a href=\'index.html\'><img src=\'assets/img/banner.png\' class=\'img-fluid\' id=\'banner\'/></a>' +
 				'</div>' +
 			'</div>' +
 		'</div>' +
