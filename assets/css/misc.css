@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans');
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-color: #0d1121;
+	color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Montserrat', sans-serif;
+}
+
+a:link, a:visited {
+	color: #bab2b7;
+}
+
+div.container {
+	margin-top: 10%;
+}
+
+div.media {
+	margin-left: 10%;
+}
+
+img {
+	-webkit-filter: invert(100%); 
+	filter: invert(100%);
+}
