@@ -11,11 +11,56 @@ h1, h2, h3, h4, h5, h6 {
 	color: #124f90;
 }
 
-p {
+p, a {
 	font-family: 'Open Sans', sans-serif;
 	color: #0d1121;
+	margin: 0 0 0 0;
 }
 
 body {
 	background-color: #d9d6d8;
+}
+
+section {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: 2em;
+	margin-right: 2em;
+}
+
+footer {
+	background-color: #0d1121;
+}
+
+footer > p, a {
+	color: white;
+	padding: 1em 1em 1em 1em;
+}
+
+div.container {
+	background-color: white;
+	padding: 0;
+}
+
+div#banner-wrapper {
+	background-color: #124f90;
+}
+
+img#banner {
+	margin-left: 2em;
+	-webkit-filter: invert(100%); 
+	filter: invert(100%);
+}
+
+nav#navbar {
+	background-color: #0d1121;
+	border-radius: 0;
+}
+
+nav#navbar > ul > li > a {
+	color: white;
+}
+
+a.active {
+	text-decoration: underline;
 }
