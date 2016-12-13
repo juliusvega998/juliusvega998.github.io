@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans');
+
+/*
+	unused colors:
+	#7d8cbb - light purple
+	#bab2b7 - light brown
+*/
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Montserrat', sans-serif;
+	color: #124f90;
+}
+
+p {
+	font-family: 'Open Sans', sans-serif;
+	color: #0d1121;
+}
+
+body {
+	background-color: #d9d6d8;
+}
