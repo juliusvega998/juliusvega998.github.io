@@ -11,6 +11,10 @@ function activeNav(ctr) {
 			document.title = 'Julius Vega | Past Projects';
 			$('section').load('templates/projects.html'); 
 			break;
+		case 3: 
+			document.title = 'Julius Vega | Contact Me';
+			$('section').load('templates/contact.html'); 
+			break;
 		default: window.location.href = 'misc/under-construction.html';
 	}
 }

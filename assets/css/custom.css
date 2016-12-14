@@ -148,6 +148,10 @@ div.bx-pager-item{
 	display: none !important;
 }
 
-div.intro {
+div#intro {
 	margin-bottom: 2em;
+}
+
+div#contact {
+	margin-bottom: 5em;
 }
