@@ -80,6 +80,8 @@ div#loading {
 
 div#content {
 	display: none;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
 }
 
 div#banner-wrapper {
