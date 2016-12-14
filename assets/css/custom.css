@@ -147,3 +147,11 @@ a.bx-prev {
 div.bx-pager-item{
 	display: none !important;
 }
+
+div#intro {
+	margin-bottom: 2em;
+}
+
+div#contact {
+	margin-bottom: 5em;
+}
