@@ -56,8 +56,17 @@ img.dp {
 
 footer {
 	font-size: 75%;
+	padding: 1em 0 1em 0;
 }
 
 footer > a {
-	color: white;
+	color: yellow;
+}
+
+footer > a:hover {
+	text-decoration: underline;
+}
+
+div.row {
+	margin-bottom: 0;
 }

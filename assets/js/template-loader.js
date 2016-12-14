@@ -16,14 +16,13 @@ function activeNav(ctr) {
 }
 
 function handleHash(hash) {
-	if(hash === '#about') {
-		activeNav(1);
-	} else if(hash === '#projects') {
+	if(hash === '#projects') {
 		activeNav(2);
-	} else if(hash === '#microsites') {
-		activeNav(3);
 	} else if(hash === '#contact') {
-		activeNav(4);
+		activeNav(3);
+	} else {
+		window.location.hash = '#about';
+		activeNav(1);
 	}
 
 	$('div#loading').fadeOut();

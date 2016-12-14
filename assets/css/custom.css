@@ -60,12 +60,12 @@ section {
 
 footer {
 	background-color: #0d1121;
+	padding: 1em 1em 1em 1em;
 }
 
-footer > p, a {
+footer > p {
 	color: white;
 	text-align: center;
-	padding: 1em 1em 1em 1em;
 }
 
 div.container {
