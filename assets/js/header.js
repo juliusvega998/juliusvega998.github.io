@@ -10,16 +10,16 @@ $(document).ready(function() {
 		'<nav class=\'navbar navbar-light\' id=\'navbar\'>' +
 			'<ul class=\'nav navbar-nav\'>' +
 				'<li class=\'nav-item active\'>' +
-					'<a class=\'nav-link\' href=\'index.html\'>About myself</a>' +
+					'<a class=\'nav-link\' href=\'index.html\'>About Myself</a>' +
 				'</li>' +
 				'<li class=\'nav-item\'>' +
-					'<a class=\'nav-link\' href=\'under-construction.html\'>Projects</a>' +
+					'<a class=\'nav-link\' href=\'under-construction.html\'>Past Projects</a>' +
 				'</li>' +
 				'<li class=\'nav-item\'>' +
 					'<a class=\'nav-link\' href=\'under-construction.html\'>Microsites</a>' +
 				'</li>' +
 				'<li class=\'nav-item\'>' +
-					'<a class=\'nav-link\' href=\'under-construction.html\'>Contact me</a>' +
+					'<a class=\'nav-link\' href=\'under-construction.html\'>Contact Me</a>' +
 				'</li>' +
 			'</ul>' +
 		'</nav>'

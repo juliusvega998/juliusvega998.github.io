@@ -105,7 +105,11 @@ nav#navbar > ul > li > a {
 	color: white;
 }
 
-a.active {
+nav > ul > li > a.active {
+	text-decoration: underline;
+}
+
+a.nav-link:hover {
 	text-decoration: underline;
 }
 
