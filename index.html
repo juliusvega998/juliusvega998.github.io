@@ -27,7 +27,13 @@
 	<script src='assets/js/loading.js'></script>
 	<script type='text/javascript'>
 	$(document).ready(function() {
-		activeNav(1);
+		window.onhashchange = function() {
+			handleHash(window.location.hash);
+		}
+		
+		if(!window.location.hash) {
+			window.location.hash = '#about';
+		}
 	});
 	</script>
 </body>
