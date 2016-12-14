@@ -131,3 +131,20 @@ p.right {
 p#shortcuts {
 	margin-top: 3em;
 }
+
+div.bx-wrapper {
+	margin-bottom: 0 !important;
+}
+
+div.bx-viewport {
+	box-shadow: 0 0 !important;
+	border: 0 !important;
+}
+
+a.bx-prev {
+	left: 0 !important;
+}
+
+div.bx-pager-item{
+	display: none !important;
+}
