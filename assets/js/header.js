@@ -13,7 +13,7 @@ $(document).ready(function() {
 					'<a class=\'nav-link\' href=\'index.html\'>About Myself</a>' +
 				'</li>' +
 				'<li class=\'nav-item\'>' +
-					'<a class=\'nav-link\' href=\'under-construction.html\'>Past Projects</a>' +
+					'<a class=\'nav-link\' href=\'projects.html\'>Past Projects</a>' +
 				'</li>' +
 				'<li class=\'nav-item\'>' +
 					'<a class=\'nav-link\' href=\'under-construction.html\'>Microsites</a>' +
