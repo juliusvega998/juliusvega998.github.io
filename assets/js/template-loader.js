@@ -15,7 +15,7 @@ function activeNav(ctr) {
 	$('nav>ul>li:nth-child(' + ctr + ')>a').css('text-decoration', 'underline');
 }
 
-function handleHash(hash) {
+function handleHash(hash, callback) {
 	if(hash === '#about') {
 		activeNav(1);
 	} else if(hash === '#projects') {
@@ -25,4 +25,6 @@ function handleHash(hash) {
 	} else if(hash === '#contact') {
 		activeNav(4);
 	}
+
+	callback();
 }

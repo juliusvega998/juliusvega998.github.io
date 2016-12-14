@@ -28,7 +28,10 @@
 	<script type='text/javascript'>
 	$(document).ready(function() {
 		window.onhashchange = function() {
-			handleHash(window.location.hash);
+			$('div#loading').fadeIn();
+			handleHash(window.location.hash, function() {
+				$('div#loading').fadeOut();
+			});
 		}
 
 		if(!window.location.hash) {
