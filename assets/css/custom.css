@@ -73,6 +73,14 @@ div.container {
 	padding: 0;
 }
 
+div#loading {
+	text-align: center;
+}
+
+div#content {
+	display: none;
+}
+
 div#banner-wrapper {
 	background-color: #124f90;
 }
@@ -80,6 +88,7 @@ div#banner-wrapper {
 img#banner {
 	margin-top: 1em;
 	margin-left: 2em;
+	margin-bottom: 1em;
 	-webkit-filter: invert(100%); 
 	filter: invert(100%);
 }

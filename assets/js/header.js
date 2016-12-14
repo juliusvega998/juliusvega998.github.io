@@ -3,7 +3,7 @@ $(document).ready(function() {
 		'<div id=\'banner-wrapper\'>' +
 			'<div class=\'row\'>' +
 				'<div class=\'col-sm-12\'>' +
-					'<a href=\'index.html\'><img src=\'assets/img/banner.png\' class=\'img-fluid\' id=\'banner\'/></a>' +
+					'<a href=\'index.html\'><img src=\'assets/img/banner_small.png\' class=\'img-fluid\' id=\'banner\'/></a>' +
 				'</div>' +
 			'</div>' +
 		'</div>' +
@@ -29,5 +29,7 @@ $(document).ready(function() {
 function activeNav(ctr) {
 	$(document).ready(function() {
 		$('nav>ul>li:nth-child(' + ctr + ')>a').addClass('active');
+		$('div#loading').hide();
+		$('div#content').show();
 	});
 }
