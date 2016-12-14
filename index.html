@@ -3,6 +3,7 @@
 <head>
 	<title>Julius Vega</title>
 	<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css' integrity='sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi' crossorigin='anonymous' />
+	<link rel="stylesheet" type="text/css" href="assets/css/jquery.bxslider.css" />
 	<link rel='stylesheet' href='assets/css/custom.css' />
 	<link rel='shortcut icon' href='assets/img/favicon/favicon.ico' type='image/x-icon'>
 	<link rel='icon' href='assets/img/favicon/favicon.ico' type='image/x-icon'>
@@ -11,8 +12,7 @@
 	<div id='loading'>Loading...</div>
 	<div class='container' id='content'>
 		<header></header>
-		<section>
-		</section>
+		<section></section>
 		<footer></footer>
 	</div>
 
@@ -20,6 +20,7 @@
 	<script src='https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js'></script>
 	<script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js' integrity='sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK' crossorigin='anonymous'>
 	</script>
+	<script src='assets/js/jquery.bxslider.min.js'></script>
 
 	<script src='assets/js/template-loader.js'></script>
 	<script src='assets/js/header.js'></script>
@@ -29,9 +30,7 @@
 	$(document).ready(function() {
 		window.onhashchange = function() {
 			$('div#loading').fadeIn();
-			handleHash(window.location.hash, function() {
-				$('div#loading').fadeOut();
-			});
+			handleHash(window.location.hash);
 		}
 
 		if(!window.location.hash) {

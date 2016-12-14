@@ -15,7 +15,7 @@ function activeNav(ctr) {
 	$('nav>ul>li:nth-child(' + ctr + ')>a').css('text-decoration', 'underline');
 }
 
-function handleHash(hash, callback) {
+function handleHash(hash) {
 	if(hash === '#about') {
 		activeNav(1);
 	} else if(hash === '#projects') {
@@ -26,5 +26,5 @@ function handleHash(hash, callback) {
 		activeNav(4);
 	}
 
-	callback();
+	$('div#loading').fadeOut();
 }
