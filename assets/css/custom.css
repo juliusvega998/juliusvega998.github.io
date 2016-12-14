@@ -109,7 +109,7 @@ nav#navbar > ul > li > a {
 	color: white;
 }
 
-a.nav-link:hover {
+a.nav-link:hover, a.active {
 	text-decoration: underline;
 }
 

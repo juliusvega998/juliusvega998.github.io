@@ -1,4 +1,7 @@
 function activeNav(ctr) {
+	$('nav>ul>li>a').css('text-decoration', '');
+	$('nav>ul>li:nth-child(' + ctr + ')>a').css('text-decoration', 'underline');
+
 	switch(ctr) {
 		case 1: 
 			document.title = 'Julius Vega | About';
@@ -10,9 +13,6 @@ function activeNav(ctr) {
 			break;
 		default: window.location.href = 'misc/under-construction.html';
 	}
-
-	$('nav>ul>li>a').css('text-decoration', 'none');
-	$('nav>ul>li:nth-child(' + ctr + ')>a').css('text-decoration', 'underline');
 }
 
 function handleHash(hash) {
