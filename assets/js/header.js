@@ -29,7 +29,8 @@ $(document).ready(function() {
 function activeNav(ctr) {
 	$(document).ready(function() {
 		$('nav>ul>li:nth-child(' + ctr + ')>a').addClass('active');
-		$('div#loading').hide();
-		$('div#content').show();
+		$('div#loading').fadeOut(function() {
+			$('div#content').fadeIn();
+		});
 	});
 }
