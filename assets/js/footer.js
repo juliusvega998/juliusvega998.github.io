@@ -1,5 +1,5 @@
 $(document).ready(function() {
 	$('footer').append(
-		'<p> Made by Julius Jireh B. Vega &copy; 2016. </p>'
+		'<p> &copy; 2016. Made by yours truly. </p>'
 	);
 });
