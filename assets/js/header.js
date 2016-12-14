@@ -10,27 +10,23 @@ $(document).ready(function() {
 		'<nav class=\'navbar navbar-light\' id=\'navbar\'>' +
 			'<ul class=\'nav navbar-nav\'>' +
 				'<li class=\'nav-item active\'>' +
-					'<a class=\'nav-link\' href=\'index.html\'>About Myself</a>' +
+					'<a class=\'nav-link\' href=\'#\' id=\'about\'>About Myself</a>' +
 				'</li>' +
 				'<li class=\'nav-item\'>' +
-					'<a class=\'nav-link\' href=\'projects.html\'>Past Projects</a>' +
+					'<a class=\'nav-link\' href=\'#\' id=\'projects\'>Past Projects</a>' +
 				'</li>' +
 				'<li class=\'nav-item\'>' +
-					'<a class=\'nav-link\' href=\'under-construction.html\'>Microsites</a>' +
+					'<a class=\'nav-link\' href=\'#\' id=\'microsites\'>Microsites</a>' +
 				'</li>' +
 				'<li class=\'nav-item\'>' +
-					'<a class=\'nav-link\' href=\'under-construction.html\'>Contact Me</a>' +
+					'<a class=\'nav-link\' href=\'#\' id=\'contact\'>Contact Me</a>' +
 				'</li>' +
 			'</ul>' +
 		'</nav>'
 	);
-});
 
-function activeNav(ctr) {
-	$(document).ready(function() {
-		$('nav>ul>li:nth-child(' + ctr + ')>a').addClass('active');
-		$('div#loading').fadeOut(function() {
-			$('div#content').fadeIn();
-		});
-	});
-}
+	handleNavClick('a#about', 1);
+	handleNavClick('a#projects', 2);
+	handleNavClick('a#microsites', 3);
+	handleNavClick('a#contact', 4);
+});
