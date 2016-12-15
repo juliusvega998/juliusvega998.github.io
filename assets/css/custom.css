@@ -1,31 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans');
 
-/*
-	unused colors:
-	#7d8cbb - light purple
-	#bab2b7 - light brown
-*/
-
 html {
   font-size: 14px;
-}
-
-@include media-breakpoint-up(sm) {
-  html {
-    font-size: 16px;
-  }
-}
-
-@include media-breakpoint-up(md) {
-  html {
-    font-size: 20px;
-  }
-}
-
-@include media-breakpoint-up(lg) {
-  html {
-    font-size: 28px;
-  }
 }
 
 body {
@@ -97,16 +73,12 @@ img#banner {
 	margin-top: 1em;
 	margin-left: 2em;
 	margin-bottom: 0.5em;
-	-webkit-filter: invert(100%); 
-	filter: invert(100%);
 }
 
 img#banner-sm {
 	margin-top: 1em;
 	margin-left: 2em;
 	margin-bottom: 0.5em;
-	-webkit-filter: invert(100%); 
-	filter: invert(100%);
 	width: 50%;
 	height: auto;
 }
