@@ -5,18 +5,22 @@ function activeNav(ctr) {
 	switch(ctr) {
 		case 1: 
 			document.title = 'Julius Vega | About';
-			$('section').load('templates/about.html'); 
+			$('section').load('templates/about.html', fadeLoader);
 			break;
 		case 2: 
 			document.title = 'Julius Vega | Past Projects';
-			$('section').load('templates/projects.html'); 
+			$('section').load('templates/projects.html', fadeLoader);
 			break;
 		case 3: 
 			document.title = 'Julius Vega | Contact Me';
-			$('section').load('templates/contact.html'); 
+			$('section').load('templates/contact.html', fadeLoader);
 			break;
 		default: window.location.href = '404.html';
 	}
+}
+
+function fadeLoader() {
+	$('div#loading').fadeOut();
 }
 
 function handleHash(hash) {
@@ -28,6 +32,4 @@ function handleHash(hash) {
 		window.location.hash = '#about';
 		activeNav(1);
 	}
-
-	$('div#loading').fadeOut();
 }
