@@ -130,6 +130,12 @@ img#me {
 	border-radius: 100%;
 }
 
+img#me-sm {
+	width: 75px;
+	height: auto;
+	border-radius: 2px;
+}
+
 p.tabbed {
 	margin-left: 2em;
 }
