@@ -149,6 +149,10 @@ div.bx-pager-item{
 	display: none !important;
 }
 
+.bx-wrapper .bx-loading {
+	background: url(../img/loader-mini.gif) center center no-repeat;
+}
+
 div#intro {
 	margin-bottom: 2em;
 }
