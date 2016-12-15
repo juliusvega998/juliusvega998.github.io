@@ -15,7 +15,7 @@ function activeNav(ctr) {
 			document.title = 'Julius Vega | Contact Me';
 			$('section').load('templates/contact.html'); 
 			break;
-		default: window.location.href = 'misc/under-construction.html';
+		default: window.location.href = '404.html';
 	}
 }
 
