@@ -32,7 +32,7 @@ p {
 }
 
 footer {
-	position: absolute;
+	position: fixed;
 	top: 100%;
 	transform: translate(0, -100%);
 	width: 300px;
@@ -112,6 +112,15 @@ div.collapsible-body {
 section {
 	margin-left: 300px;
 	counter-reset: line;
+}
+
+section > img {
+	margin: 1em;
+	max-width: calc(100% - 300px) !important;
+}
+
+.caption {
+	margin: 1em;
 }
 
 section a:link, section a:visited {

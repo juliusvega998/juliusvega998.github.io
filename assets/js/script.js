@@ -1,7 +1,7 @@
 $(document).ready(function() {
     window.onhashchange = function() {
         $('div#loading').fadeIn();
-        handleHash(window.location.hash);
+        activeNav(window.location.hash);
     }
 
     if(!window.location.hash) {
