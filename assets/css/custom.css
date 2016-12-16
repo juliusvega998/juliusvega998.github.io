@@ -137,4 +137,26 @@ section p:before, section h1:before, section h2:before{
 	padding: 0 .5em;
 	margin-right: .5em;
 	color: #EDF6EE;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+li#logo-wrapper a {
+	line-height: normal;
+}
+
+img#logo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1em 0;
+	width: 250px;
+	height: auto;
+}
+
+i.material-icons {
+	font-size: 20px;
+	height: auto !important;
+	line-height: 24px !important;
+	color: #CDB380 !important;
 }
