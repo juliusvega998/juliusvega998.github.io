@@ -63,22 +63,20 @@ ul.side-nav {
 	border-right: 1px solid #888888;
 }
 
-ul.side-nav > li {
+ul.side-nav li {
 	line-height: normal;
-}
-
-ul.side-nav > li > a {
-	line-height: normal;
-	height: auto;
 }
 
 ul.side-nav a {
 	color: #CDB380;
+	line-height: normal;
+	height: auto;
 }
 
 .collapsible-header {
 	min-height: 0;
 	padding: 0 32px !important;
+	line-height: normal !important;
 }
 
 a:link, a:visited {
@@ -87,6 +85,14 @@ a:link, a:visited {
 
 a:hover {
 	text-decoration: underline;
+}
+
+i {
+	color: white !important;
+}
+
+div.collapsible-body {
+	background-color: #033649 !important;
 }
 
 section {
