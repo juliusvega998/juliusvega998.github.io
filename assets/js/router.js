@@ -15,6 +15,18 @@ function activeNav(hash) {
 			document.title = 'Julius Vega | my_picture.jpg';
 			$('section').load('templates/pictures/my_picture.html', fadeLoader);
 			break;
+		case '#diet':
+			document.title = 'Julius Vega | diet_optimizer.page';
+			$('section').load('templates/projects/diet.html', fadeLoader);
+			break;
+		case '#nine':
+			document.title = 'Julius Vega | project_nine.page';
+			$('section').load('templates/projects/nine.html', fadeLoader);
+			break;
+		case '#s1reborn':
+			document.title = 'Julius Vega | systemone_reborn.page';
+			$('section').load('templates/projects/s1reborn.html', fadeLoader);
+			break;
 		case '#diet.png':
 			document.title = 'Julius Vega | diet.png';
 			$('section').load('templates/pictures/diet.html', fadeLoader);
