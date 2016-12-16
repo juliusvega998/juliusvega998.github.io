@@ -1,13 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
 
 body {
-	font-family: 'Open Sans', sans-serif;
-	background-color: #0d1121;
-	color: white;
+	font-family: 'Inconsolata', sans-serif;
+	background-color: #031634;
+	color: #EDF6EE;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Inconsolata', sans-serif;
+	color: #CDB380;
 }
 
 a:link, a:visited {

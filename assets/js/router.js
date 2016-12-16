@@ -1,6 +1,6 @@
 function activeNav(ctr, hash) {
-	$('a').css('background-color', '');
-	$('a[target=\'' + hash +'\']').css('background-color', 'rgba(0,0,0,0.5)');
+	$('a').css('text-decoration', '');
+	$('a[href=\'' + hash +'\']').css('text-decoration', 'underline');
 
 	switch(ctr) {
 		case 1: 
