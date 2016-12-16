@@ -37,7 +37,6 @@ footer {
 	transform: translate(0, -100%);
 	width: 300px;
 	padding: 1em;
-	/*text-align: center;*/
 	z-index: 100000;
 }
 
@@ -115,5 +114,31 @@ div.collapsible-body {
 }
 
 section {
-	margin-left: 310px
+	margin-left: 310px;
+	counter-reset: line;
+}
+
+section a:link, section a:visited {
+	color: #E8DDCB;
+	text-decoration: underline;
+}
+
+section a:hover {
+	text-decoration: none;
+}
+
+section p, section h1, section h2, section li {
+	margin-left: 2em;
+	counter-increment: line;
+}
+
+section p:before, section h1:before, section h2:before{
+	content: counter(line);
+	display: inline-block;
+	border-right: 1px solid #ddd;
+	width: 2em;
+	margin-left: -2em;
+	padding: 0 .5em;
+	margin-right: .5em;
+	color: #EDF6EE;
 }
