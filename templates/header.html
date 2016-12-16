@@ -10,9 +10,9 @@
 						<a class='collapsible-header'>past_projects_sample</a>
 						<div class='collapsible-body'>
 							<ul>
-								<li><a href='#'>diet_optimizer.html</a></li>
-								<li><a href='#'>project_nine.html</a></li>
-								<li><a href='#'>systemone_reborn.html</a></li>
+								<li><a href='#diet'>diet_optimizer.html</a></li>
+								<li><a href='#nine'>project_nine.html</a></li>
+								<li><a href='#systemone'>systemone_reborn.html</a></li>
 							</ul>
 						</div>
 					</li>
@@ -30,8 +30,8 @@
 <script type='text/javascript'>
 $(document).ready(function(){
 	$('.collapsible').collapsible();
-	$('div.collapsible-body > li > a').css('padding-left', function (index, curValue) {
-		return parseInt(curValue, 10) + 32 + 'px';
+	$('div.collapsible-body > ul > *').css('padding-left', function (index, curValue) {
+		return parseInt(curValue, 10) + 16 + 'px';
 	});
 });
 </script>

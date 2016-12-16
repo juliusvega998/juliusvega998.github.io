@@ -1,6 +1,6 @@
-function activeNav(ctr) {
-	$('nav>ul>li>a').css('text-decoration', '');
-	$('nav>ul>li:nth-child(' + ctr + ')>a').css('text-decoration', 'underline');
+function activeNav(ctr, hash) {
+	$('a').css('text-decoration', '');
+	$('a[target=\'' + hash +'\']').css('text-decoration', 'underline');
 
 	switch(ctr) {
 		case 1: 
@@ -27,11 +27,11 @@ function fadeLoader() {
 
 function handleHash(hash) {
 	if(hash === '#projects') {
-		activeNav(2);
+		activeNav(2, hash);
 	} else if(hash === '#contact') {
-		activeNav(3);
+		activeNav(3, hash);
 	} else {
 		window.location.hash = '#about';
-		activeNav(1);
+		activeNav(1, window.location.hash);
 	}
 }
