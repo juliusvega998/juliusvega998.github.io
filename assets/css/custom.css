@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Raleway');
 
 html {
   font-size: 14px;
@@ -6,11 +6,11 @@ html {
 
 body {
 	background-color: #d9d6d8;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Raleway', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Playfair Display', serif;
 	color: #124f90;
 }
 
