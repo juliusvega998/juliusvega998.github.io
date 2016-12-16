@@ -17,6 +17,8 @@ function activeNav(ctr) {
 			break;
 		default: window.location.href = '404.html';
 	}
+
+	fadeLoader();
 }
 
 function fadeLoader() {
