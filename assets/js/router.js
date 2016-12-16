@@ -23,6 +23,7 @@ function activeNav(ctr, hash) {
 
 function fadeLoader() {
 	$('div#loading').fadeOut();
+	putTabs();
 }
 
 function handleHash(hash) {
