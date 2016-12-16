@@ -9,12 +9,18 @@ body {
 	background-color: #031634;
 	font-family: 'Inconsolata', monospace;
 	min-height: 100%;
+	color: #EDF6EE;
 }
 
 h1, h2, h3, h4, h5, h6 {
 	font-size: 100%;
 	color: #CDB380;
 	margin: 0;
+	line-height: normal !important;
+}
+
+ul {
+	margin: 0 0 0 0;
 }
 
 .comment {

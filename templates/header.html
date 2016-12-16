@@ -30,5 +30,8 @@
 <script type='text/javascript'>
 $(document).ready(function(){
 	$('.collapsible').collapsible();
+	$('div.collapsible-body > li > a').css('padding-left', function (index, curValue) {
+		return parseInt(curValue, 10) + 32 + 'px';
+	});
 });
 </script>
