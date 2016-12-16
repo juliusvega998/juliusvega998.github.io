@@ -81,6 +81,11 @@ ul.side-nav a {
 	color: #CDB380;
 	line-height: 24px;
 	height: auto;
+	padding: 0 0 !important;
+}
+
+ul.side-nav li {
+	padding: 0 1em;
 }
 
 .collapsible {
