@@ -70,19 +70,23 @@ ul.side-nav {
 }
 
 ul.side-nav li {
-	line-height: normal;
+	line-height: 24px;
+}
+
+li {
+	padding: 0 2em;
 }
 
 ul.side-nav a {
 	color: #CDB380;
-	line-height: normal;
+	line-height: 24px;
 	height: auto;
 }
 
 .collapsible-header {
 	min-height: 0;
 	padding: 0 32px !important;
-	line-height: normal !important;
+	line-height: 24px !important;
 }
 
 a:link, a:visited {
