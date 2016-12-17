@@ -15,6 +15,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 100%;
 	color: #CDB380;
 	margin: 0;
+	font-weight: bold;
 	line-height: normal !important;
 }
 
@@ -140,12 +141,12 @@ section p, section h1, section h2, section li {
 section p:before, section h1:before, section h2:before{
 	content: counter(line);
 	display: inline-block;
-	border-right: 1px solid #ddd;
+	border-right: 1px solid #fff;
 	width: 2em;
 	margin-left: -2em;
 	padding: 0 .5em;
 	margin-right: .5em;
-	color: #EDF6EE;
+	color: #AAAAAA;
 	-webkit-user-select: none;
 	user-select: none;
 }
@@ -168,4 +169,9 @@ i.material-icons {
 	height: auto !important;
 	line-height: 24px !important;
 	color: #CDB380 !important;
+}
+
+p.tag {
+	color: #CDB380;
+	font-style: italic;
 }
