@@ -101,7 +101,7 @@ div.collapsible-body {
 	background-color: #033649 !important;
 }
 
-section > img {
+main > img {
 	margin: 1em;
 	max-width: calc(100% - 300px) !important;
 }
@@ -110,12 +110,12 @@ section > img {
 	margin: 1em;
 }
 
-section a:link, section a:visited {
+main a:link, main a:visited {
 	color: #E8DDCB;
 	text-decoration: underline;
 }
 
-section a:hover {
+main a:hover {
 	text-decoration: none;
 }
 
@@ -129,17 +129,17 @@ section a:hover {
 		z-index: 100000;
 	}
 
-	section {
+	main {
 		margin-left: 300px;
 		counter-reset: line;
 	}
 
-	section p, section h1, section h2, section li {
+	main p, main h1, main h2, main li {
 		margin-left: 2em;
 		counter-increment: line;
 	}
 
-	section p:before, section h1:before, section h2:before{
+	main p:before, main h1:before, main h2:before{
 		content: counter(line);
 		display: inline-block;
 		border-right: 1px solid #fff;
