@@ -1,35 +1,50 @@
-function activeNav(ctr) {
-	$('nav>ul>li>a').css('text-decoration', '');
-	$('nav>ul>li:nth-child(' + ctr + ')>a').css('text-decoration', 'underline');
+function activeNav(hash) {
+	$('a').css('text-decoration', '');
+	$('a[href=\'' + hash +'\']').css('text-decoration', 'underline');
 
-	switch(ctr) {
-		case 1: 
-			document.title = 'Julius Vega | About';
-			$('section').load('templates/about.html', fadeLoader);
+	switch(hash) {
+		case '#about': 
+			document.title = 'Julius Vega | about_myself.page';
+			$('main').load('templates/about.html', fadeLoader);
 			break;
-		case 2: 
-			document.title = 'Julius Vega | Past Projects';
-			$('section').load('templates/projects.html', fadeLoader);
+		case '#contact': 
+			document.title = 'Julius Vega | contact_me.page';
+			$('main').load('templates/contact.html', fadeLoader);
 			break;
-		case 3: 
-			document.title = 'Julius Vega | Contact Me';
-			$('section').load('templates/contact.html', fadeLoader);
+		case '#my_picture.jpg':
+			document.title = 'Julius Vega | my_picture.jpg';
+			$('main').load('templates/pictures/my_picture.html', fadeLoader);
 			break;
+		case '#diet':
+			document.title = 'Julius Vega | diet_optimizer.page';
+			$('main').load('templates/projects/diet.html', fadeLoader);
+			break;
+		case '#nine':
+			document.title = 'Julius Vega | project_nine.page';
+			$('main').load('templates/projects/nine.html', fadeLoader);
+			break;
+		case '#s1reborn':
+			document.title = 'Julius Vega | systemone_reborn.page';
+			$('main').load('templates/projects/s1reborn.html', fadeLoader);
+			break;
+		case '#diet.png':
+			document.title = 'Julius Vega | diet.png';
+			$('main').load('templates/pictures/diet.html', fadeLoader);
+			break;
+		case '#nine.png':
+			document.title = 'Julius Vega | nine.png';
+			$('main').load('templates/pictures/nine.html', fadeLoader);
+			break;
+		case '#s1reborn.png':
+			document.title = 'Julius Vega | s1reborn.png';
+			$('main').load('templates/pictures/s1reborn.html', fadeLoader);
+			break;
+		case '#': break;
 		default: window.location.href = '404.html';
 	}
 }
 
 function fadeLoader() {
 	$('div#loading').fadeOut();
-}
-
-function handleHash(hash) {
-	if(hash === '#projects') {
-		activeNav(2);
-	} else if(hash === '#contact') {
-		activeNav(3);
-	} else {
-		window.location.hash = '#about';
-		activeNav(1);
-	}
+	putTabs();
 }
