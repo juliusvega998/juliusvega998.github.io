@@ -32,15 +32,6 @@ p {
 	margin: 0;
 }
 
-footer {
-	position: fixed;
-	top: 100%;
-	transform: translate(0, -100%);
-	width: 300px;
-	padding: 1em;
-	z-index: 100000;
-}
-
 footer > p {
 	margin: 0;
 }
@@ -110,11 +101,6 @@ div.collapsible-body {
 	background-color: #033649 !important;
 }
 
-section {
-	margin-left: 300px;
-	counter-reset: line;
-}
-
 section > img {
 	margin: 1em;
 	max-width: calc(100% - 300px) !important;
@@ -133,24 +119,54 @@ section a:hover {
 	text-decoration: none;
 }
 
-section p, section h1, section h2, section li {
-	margin-left: 2em;
-	counter-increment: line;
+@media only screen and (min-width: 993px) {
+	footer {
+		position: fixed;
+		top: 100%;
+		transform: translate(0, -100%);
+		width: 300px;
+		padding: 1em;
+		z-index: 100000;
+	}
+
+	section {
+		margin-left: 300px;
+		counter-reset: line;
+	}
+
+	section p, section h1, section h2, section li {
+		margin-left: 2em;
+		counter-increment: line;
+	}
+
+	section p:before, section h1:before, section h2:before{
+		content: counter(line);
+		display: inline-block;
+		border-right: 1px solid #fff;
+		width: 2em;
+		margin-left: -2em;
+		padding: 0 .5em;
+		margin-right: .5em;
+		color: #AAAAAA;
+		-webkit-user-select: none;
+		user-select: none;
+		font-style: normal;
+		font-weight: normal;
+	}
 }
 
-section p:before, section h1:before, section h2:before{
-	content: counter(line);
-	display: inline-block;
-	border-right: 1px solid #fff;
-	width: 2em;
-	margin-left: -2em;
-	padding: 0 .5em;
-	margin-right: .5em;
-	color: #AAAAAA;
-	-webkit-user-select: none;
-	user-select: none;
-	font-style: normal;
-	font-weight: normal;
+@media only screen and (max-width: 992px) {
+	footer {
+		position: fixed;
+		top: 100%;
+		left: 50%;
+		width: 100%;
+		text-align: center;
+		transform: translate(-50%, -100%);
+		z-index: 100000;
+		padding: 1em;
+		background-color: #033649;
+	}
 }
 
 li#logo-wrapper a {
