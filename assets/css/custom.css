@@ -149,6 +149,8 @@ section p:before, section h1:before, section h2:before{
 	color: #AAAAAA;
 	-webkit-user-select: none;
 	user-select: none;
+	font-style: normal;
+	font-weight: normal;
 }
 
 li#logo-wrapper a {
