@@ -27,9 +27,53 @@
 	<li><a href='#my_picture.jpg'>my_picture.jpg</a></li>
 </ul>
 
+<div class='hide-on-large-only'>
+	<div class='navbar-fixed'>
+		<nav>
+			<div class='nav-wrapper'>
+				<ul>
+					<a href='javascript:undefined' data-activates='slide-nav' class='button-collapse'>
+						<i class='material-icons'>menu</i>
+					</a>
+				</ul>
+			</div>
+		</nav>
+	</div>
+
+	<ul id='slide-nav' class='side-nav collapsible' data-collapsible='accordion'>
+		<li id='logo-wrapper'>
+			<a href='#about'><img src='assets/img/banner_small.png' class='responsive-img' id='logo' alt='logo'/></a>
+		</li>
+		<li>
+			<a class='collapsible-header'>past_projects<i class="material-icons right">arrow_drop_down</i></a>
+			<div class='collapsible-body'>
+				<ul class='collapsible'>
+					<li>
+						<a class='collapsible-header'>past_projects_screenshots<i class="material-icons right">arrow_drop_down</i></a>
+						<div class='collapsible-body'>
+							<ul>
+								<li><a href='#diet.png'>diet.png</a></li>
+								<li><a href='#nine.png'>nine.png</a></li>
+								<li><a href='#s1reborn.png'>s1reborn.png</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href='#diet'>diet_optimizer.page</a></li>
+					<li><a href='#nine'>project_nine.page</a></li>
+					<li><a href='#s1reborn'>systemone_reborn.page</a></li>
+				</ul>
+			</div>
+		</li>
+		<li><a href='#about'>about_myself.page</a></li>
+		<li><a href='#contact'>contact_me.page</a></li>
+		<li><a href='#my_picture.jpg'>my_picture.jpg</a></li>
+	</ul>
+</div>
+
 <script type='text/javascript'>
 $(document).ready(function(){
 	$('.collapsible').collapsible();
+	$(".button-collapse").sideNav();
 	$('div.collapsible-body > ul > *').css('padding-left', function (index, curValue) {
 		return parseInt(curValue, 10) + 16 + 'px';
 	});

@@ -39,6 +39,7 @@ function activeNav(hash) {
 			document.title = 'Julius Vega | s1reborn.png';
 			$('main').load('templates/pictures/s1reborn.html', fadeLoader);
 			break;
+		case '#': break;
 		default: window.location.href = '404.html';
 	}
 }
