@@ -5,7 +5,7 @@ function activeNav(hash) {
 	$(".button-collapse").sideNav('hide');
 
 	switch(hash) {
-		case '#about': 
+		case '#about': case '#': case '': 
 			loadPage('templates/about.html', name + 'about_myself.page');
 			break;
 		case '#contact': 
@@ -38,8 +38,8 @@ function activeNav(hash) {
 		case '#twitch_annotator.png':
 			loadPage('templates/pictures/sp.html', name + 'twitch_annotator.png');
 			break;
-		case '#': break;
-		default: window.location.href = '404.html';
+		default: 
+			window.location.href = '404.html';
 	}
 }
 

@@ -210,6 +210,15 @@ img#logo {
 	height: auto;
 }
 
+img#nav-mobile-img {
+	width: 24px;
+	height: auto;
+}
+
+a.brand-logo {
+	line-height: 0px;
+}
+
 i.material-icons {
 	font-size: 20px;
 	height: auto !important;
