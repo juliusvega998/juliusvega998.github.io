@@ -191,6 +191,10 @@ main a:hover {
 	main {
 		margin-bottom: 5em;
 	}
+
+	ul.side-nav a, ul.side-nav i {
+		line-height: 48px !important;
+	}
 }
 
 li#logo-wrapper a {
