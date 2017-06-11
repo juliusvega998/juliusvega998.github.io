@@ -123,6 +123,7 @@ main a:hover {
 
 @media only screen and (min-width: 993px) {
 	footer {
+		position: absolute;
 		top: 100%;
 		transform: translate(0, -100%);
 		width: 300px;
