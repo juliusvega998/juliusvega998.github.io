@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Inconsolata|Roboto');
 
+/* color pallete: http://www.colourlovers.com/palette/292482/Terra */
+
 html {
   min-height: 100%;
 }
@@ -34,6 +36,11 @@ p {
 
 footer > p {
 	margin: 0;
+}
+
+span.emphasis {
+	color: #CFF09E;
+	font-style: italic;
 }
 
 div#loading {
@@ -183,6 +190,10 @@ main a:hover {
 
 	main {
 		margin-bottom: 5em;
+	}
+
+	ul.side-nav a, ul.side-nav i {
+		line-height: 48px !important;
 	}
 }
 
