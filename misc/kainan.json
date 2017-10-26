@@ -1,16 +1,14 @@
 {
 	"main": [
 		"7th Floor",
-		"B1 Karinderya (WARNING: Only for poor people)",
+		"B1 Karinderya",
 		"Chimes",
 		"Ramen Kuroda",
 		"Roadster",
 		"McDonalds",
 		"Jollibee",
 		"Kapitolyo",
-		"Pioneer Street Market (aka HMR)",
-		"Taco Viengo",
-		"...I don't know... You decide!"
+		"Pioneer Street Market (aka HMR)"
 	],
 	"snacks": [
 		"7-11",
@@ -20,8 +18,7 @@
 		"7th floor",
 		"Pan de Manila",
 		"Cab Cafe",
-		"Infinitea",
-		"...I don't know... You decide!"
+		"Infinitea"
 	],
 	"donuts": [
 		"Sansribav",
