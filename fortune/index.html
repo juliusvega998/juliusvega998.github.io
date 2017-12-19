@@ -11,10 +11,11 @@
 	<script type="text/javascript">
 		let url = "https://fortune-eikrujgleq.now.sh/fortune";
 		$.ajax({
-			method: "GET"
+			method: "GET",
+			url: url
 		}).done(function (res) {
 			$("#fortune").html(res.message);
-			console.log(res);
+			console.log(res.message);
 		});
 	</script>
 </body>
