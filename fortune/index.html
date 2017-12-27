@@ -110,7 +110,7 @@
 				url: url + "/fortune"
 			}).done(function (data) {
 				console.log(data);
-				$("#fortune").val(JSON.parse(data).message);
+				$("#fortune").val(data.message);
 			});
 		}
 
