@@ -108,6 +108,7 @@
 				method: "GET",
 				url: url + "/fortune"
 			}).done(function (data) {
+				alert(data);
 				$("#fortune").val(JSON.parse(data).message);
 			});
 		}
@@ -117,10 +118,10 @@
 				method: "GET",
 				url: url + "/fortune"
 			}).done(function(data) {
-				$("#fortune").disabled(false);
+				$("#fortune").prop("disabled", false);
 			}).fail(function(jqXHR, err) {
 				ping();
-			});	
+			});
 		}
 
 		$(window).on('load', function() {
