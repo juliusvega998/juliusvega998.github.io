@@ -116,10 +116,8 @@
 			$.ajax({
 				method: "GET",
 				url: url + "/fortune"
-			}).done(function (data) {
-				console.log("Data: " + data)
 			}).fail(function(jqXHR, err) {
-				console.log("Error: " + err);
+				ping()
 			});	
 		}
 
