@@ -106,8 +106,8 @@
 		function generate() {
 			$.ajax({
 				method: "GET",
-				url: url + "/fortune",
-				contentType: "application/json"
+				contentType: "application/json",
+				url: url + "/fortune"
 			}).done(function (data) {
 				$("#fortune").val(JSON.parse(data).message);
 			});
@@ -116,8 +116,8 @@
 		function ping() {
 			$.ajax({
 				method: "GET",
-				url: url + "/fortune",
-				contentType: "application/json"
+				contentType: "application/json",
+				url: url + "/fortune"
 			}).done(function(data) {
 				$("#fortune").prop("disabled", false);
 			}).fail(function(jqXHR, err) {
