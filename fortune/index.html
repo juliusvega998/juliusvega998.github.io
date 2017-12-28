@@ -112,7 +112,6 @@
 				mimeType: "application/json",
 				url: url + "/fortune"
 			}).done(function (data) {
-				console.log(data);
 				$("#fortune").val(data.message);
 			});
 		}
