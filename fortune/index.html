@@ -73,6 +73,10 @@
 			background-color: #ff6d00;
 			border-color: #ff6d00;
 		}
+
+		input#fortune[readonly=""] {
+			background-color: white;
+		}
 	</style>
 </head>
 <body>
@@ -129,6 +133,7 @@
 				url: url + "/fortune"
 			}).done(function(data) {
 				$("#fortune").prop("disabled", false);
+				$("#fortune").prop("readonly", true);
 				$("#fortune").val("");
 				$("#generate").on('click', function() {
 					generate();
