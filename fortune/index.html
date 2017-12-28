@@ -118,7 +118,7 @@
 				mimeType: "application/json",
 				url: url + "/fortune"
 			}).done(function (data) {
-				$("#fortune").val(data.message);
+				$("#fortune").val(capitalize(data.message) + ".");
 			});
 		}
 
@@ -130,16 +130,20 @@
 			}).done(function(data) {
 				$("#fortune").prop("disabled", false);
 				$("#fortune").val("");
+				$("#generate").on('click', function() {
+					generate();
+				})
 			}).fail(function(jqXHR, err) {
 				ping();
 			});
 		}
 
+		function capitalize(string) {
+			return string.charAt(0).toUpperCase() + string.slice(1);
+		}
+
 		$(window).on('load', function() {
 			ping();
-			$("#generate").on('click', function() {
-				generate();
-			})
 		})
 	</script>
 </body>
