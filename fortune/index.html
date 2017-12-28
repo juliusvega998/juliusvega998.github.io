@@ -75,7 +75,7 @@
 			<div class="col">
 				<h1 class="center">Know your fortune!</h1>
 				<div class="input-group">
-					<input class="form-control" type="text" id="fortune" placeholder="Fortune will appear here..." disabled/>
+					<input class="form-control" type="text" id="fortune" placeholder="What is your fortune of the day?" value="Loading..." disabled/>
 					<span class="input-group-btn">
 						<button class="btn btn-secondary bg-warning" type="button" id="generate">Generate Fortune</button>
 					</span>
@@ -123,6 +123,7 @@
 				url: url + "/fortune"
 			}).done(function(data) {
 				$("#fortune").prop("disabled", false);
+				$("#fortune").val("");
 			}).fail(function(jqXHR, err) {
 				ping();
 			});
