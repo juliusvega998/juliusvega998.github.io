@@ -66,6 +66,12 @@
 
 		.accent {
 			background-color: #ffd180;
+			border-color: #ffd180;
+		}
+
+		.accent:hover {
+			background-color: #ffab40;
+			border-color: #ffab40;
 		}
 	</style>
 </head>
@@ -75,10 +81,10 @@
 			<div class="col">
 				<h1 class="center">Know your fortune!</h1>
 				<div class="input-group">
-					<input class="form-control" type="text" id="fortune" placeholder="What is your fortune of the day?" value="Loading..." disabled/>
 					<span class="input-group-btn">
-						<button class="btn btn-secondary bg-warning" type="button" id="generate">Generate Fortune</button>
+						<button class="btn btn-secondary accent" type="button" id="generate">Generate Fortune</button>
 					</span>
+					<input class="form-control" type="text" id="fortune" placeholder="What is your fortune of the day?" value="Loading..." disabled/>
 				</div>
 			</div>
 		</div>
