@@ -193,7 +193,9 @@
 				mimeType: "application/json",
 				url: url + "/fortune"
 			}).done(function (data) {
-				$("#fortune").val(capitalize(data.message) + ".");
+				let msg = capitalize(data.message) + ".";
+				$("input#fortune").val(msg);
+				$("textarea#fortune").text(msg);
 			});
 		}
 
@@ -205,7 +207,8 @@
 			}).done(function(data) {
 				$("#fortune").prop("disabled", false);
 				$("#fortune").prop("readonly", true);
-				$("#fortune").val("");
+				$("input#fortune").val("");
+				$("textarea#fortune").text("What is your fortune of the day?");
 				$("#generate").on('click', function() {
 					generate();
 				})
