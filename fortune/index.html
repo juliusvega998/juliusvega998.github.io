@@ -127,13 +127,13 @@
 			<div class="col d-none d-md-block">
 				<div class="input-group">
 					<span class="input-group-btn">
-						<button class="btn btn-secondary accent" type="button" id="generate">Generate Fortune</button>
+						<button class="btn btn-secondary accent generate" type="button" id="">Generate Fortune</button>
 					</span>
 					<input class="form-control" type="text" id="fortune" placeholder="What is your fortune of the day?" value="Loading..." disabled/>
 				</div>
 			</div>
 			<div class="col d-sm-none mobile-main">
-				<button class="btn btn-secondary accent" type="button" id="generate">Generate Fortune</button>
+				<button class="btn btn-secondary accent generate" type="button">Generate Fortune</button>
 				<textarea class="form-control" id="fortune" rows="2" readonly>Loading...</textarea>
 			</div>
 		</div>
@@ -209,7 +209,7 @@
 				$("#fortune").prop("readonly", true);
 				$("input#fortune").val("");
 				$("textarea#fortune").text("What is your fortune of the day?");
-				$("#generate").on('click', function() {
+				$("button.generate").on('click', function() {
 					generate();
 				})
 			}).fail(function(jqXHR, err) {
