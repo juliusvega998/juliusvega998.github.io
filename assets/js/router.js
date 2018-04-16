@@ -45,7 +45,7 @@ function activeNav(hash) {
 
 function loadPage(prefix, page, title) {
 	document.title = title;
-	if (isMobile() && (!prefix.includes('pictures') || page !== 'contact.html') {
+	if (isMobile() && (!prefix.includes('pictures') || page !== 'contact.html')) {
 		page = 'm.' + page
 	}
 
