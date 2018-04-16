@@ -1,6 +1,7 @@
 $(document).ready(function() {
     window.onhashchange = function() {
         $('div#loading').fadeIn();
+        $('div#overlay').fadeIn();
         activeNav(window.location.hash);
     }
 

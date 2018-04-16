@@ -45,10 +45,9 @@ function activeNav(hash) {
 
 function loadPage(page, title) {
 	document.title = title;
-	//$('main').fadeOut();
 	$('main').load(page, function() {
 		$('div#loading').fadeOut();
-		//$('main').fadeIn();
+		$('div#overlay').fadeOut();
 		putTabs();
 	});
 }
