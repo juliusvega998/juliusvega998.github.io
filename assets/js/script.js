@@ -2,6 +2,7 @@ $(document).ready(function() {
     window.onhashchange = function() {
         $('div#loading').fadeIn();
         $('div#overlay').fadeIn();
+        window.scrollTo(0,0);
         activeNav(window.location.hash);
     }
 
