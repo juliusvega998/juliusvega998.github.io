@@ -45,9 +45,9 @@ function activeNav(hash) {
 
 function loadPage(prefix, page, title) {
 	document.title = title;
-	// if (isMobile() && page === 'templates/about.html') {
-	// 	page = 'templates/m.about.html'
-	// }
+	if (isMobile() && !prefix.includes('pictures')) {
+		page = 'm.' + page
+	}
 
 	$('main').load(prefix + page, function() {
 		$('div#loading').fadeOut();
