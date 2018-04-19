@@ -40,13 +40,10 @@ function fetchPage(page, tag, callback) {
 function setCurrentPage(hash) {
 	let links = document.querySelectorAll('a');
 	links.forEach(function(l, i) {
-		console.log(l.getAttribute('href'));
 		if(l.getAttribute('href') == hash) {
-			l.setAttribute('text-decoration', 'underline');
-			console.log('yey!');
+			l.setAttribute('style', 'text-decoration:underline;');
 		} else {
-			l.setAttribute('text-decoration', 'none');
-			console.log('nay');			
+			l.setAttribute('style', 'text-decoration:none;');
 		}
 	});
 }
