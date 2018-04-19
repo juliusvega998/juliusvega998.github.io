@@ -1,3 +1,42 @@
+window.onhashchange = function() {
+	$('div#overlay').fadeIn();
+	window.scrollTo(0,0);
+	activeNav(window.location.hash);
+}
+
+//TODO: convert to vanillaJS
+function headerInit() {
+	$('.collapsible').collapsible();
+	$(".button-collapse").sideNav();
+	$('div.collapsible-body > ul > *').css('padding-left', function (index, curValue) {
+		return parseInt(curValue, 10) + 16 + 'px';
+	});
+}
+
+function putTabs() {
+	$('.tabbed').each(function(index) {
+		$(this).html('&nbsp;&nbsp;&nbsp;&nbsp;' + $(this).html());
+	});
+}
+
+function isMobile() {
+	return navigator.userAgent.match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile/i);
+}
+
+function fetchPage(page, tag, callback) {
+	fetch(page).then(function(response) {
+		return response.text();
+	}).then(function(body) {
+		document.querySelector(tag).innerHTML = body;
+		if(callback) {
+			callback();
+		}
+	}).catch(function(err) {
+		alert(err);
+	});
+}
+
+//TODO: convert to vanillaJS
 function activeNav(hash) {
 	if(!hash) {
 		hash = '#about';
@@ -53,12 +92,14 @@ function loadPage(prefix, page, title) {
 		page = 'm.' + page
 	}
 
-	$('main').load(prefix + page, function() {
+	fetchPage(prefix + page, "main", function() {
 		$('div#overlay').fadeOut();
 		putTabs();
-	});
+	})
 }
 
-function isMobile() {
-	return navigator.userAgent.match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile/i);
-}
+let header = (isMobile())? "templates/m.header.html": "templates/header.html";
+
+fetchPage("/templates/footer.html", "footer");
+fetchPage(header, "header", headerInit);
+activeNav(window.location.hash);
