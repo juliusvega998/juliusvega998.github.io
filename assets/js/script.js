@@ -11,7 +11,7 @@ function headerInit() {
 	$('div.collapsible-body > ul > *').css('padding-left', function (index, curValue) {
 		return parseInt(curValue, 10) + 16 + 'px';
 	});
-	document.querySelector('a[href=\'' + window.location.hash +'\']').setAttribute('text-decoration', 'underline');
+	setCurrentPage();
 }
 
 function putTabs() {
@@ -37,14 +37,7 @@ function fetchPage(page, tag, callback) {
 	});
 }
 
-
-function activeNav(hash) {
-	if(!hash) {
-		hash = '#about';
-	}
-
-	//TODO: convert to vanillaJS
-	const name = 'Julius Vega | ';
+function setCurrentPage() {
 	let links = document.querySelectorAll('a');
 	links.forEach(function(l, i) {
 		console.log(l.getAttribute('href'));
@@ -56,6 +49,18 @@ function activeNav(hash) {
 			console.log('nay');			
 		}
 	});
+}
+
+
+function activeNav(hash) {
+	if(!hash) {
+		hash = '#about';
+	}
+
+	setCurrentPage();
+
+	//TODO: convert to vanillaJS
+	const name = 'Julius Vega | ';
 	$('.button-collapse').sideNav('hide');
 
 	switch(hash) {
