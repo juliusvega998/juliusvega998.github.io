@@ -22,11 +22,14 @@ function isMobile() {
 	return navigator.userAgent.match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile/i);
 }
 
-function fetchPage(page, tag) {
+function fetchPage(page, tag, callback) {
 	fetch(page).then(function(response) {
 		return response.text();
 	}).then(function(body) {
 		document.querySelector(tag).innerHTML = body;
+		if(callback) {
+			callback();
+		}
 	}).catch(function(err) {
 		alert(err);
 	});
@@ -34,5 +37,5 @@ function fetchPage(page, tag) {
 let header = (isMobile())? "templates/m.header.html": "templates/header.html";
 
 fetchPage("/templates/footer.html", "footer");
-fetchPage(header, "header");
+fetchPage(header, "header", headerInit);
 activeNav(window.location.hash);
