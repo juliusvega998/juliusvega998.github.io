@@ -46,13 +46,13 @@ function activeNav(hash) {
 	//TODO: convert to vanillaJS
 	const name = 'Julius Vega | ';
 	let links = document.querySelectorAll('a');
-	links.forEach(l, i) {
+	links.forEach(function(l, i) {
 		if(l.getAttribute('href') == hash) {
 			l.setAttribute('text-decoration', 'underline');
 		} else {
 			l.setAttribute('text-decoration', 'none');
 		}
-	}
+	});
 	$('.button-collapse').sideNav('hide');
 
 	switch(hash) {
