@@ -47,10 +47,13 @@ function activeNav(hash) {
 	const name = 'Julius Vega | ';
 	let links = document.querySelectorAll('a');
 	links.forEach(function(l, i) {
+		console.log(l.getAttribute('href'));
 		if(l.getAttribute('href') == hash) {
 			l.setAttribute('text-decoration', 'underline');
+			console.log('yey!');
 		} else {
 			l.setAttribute('text-decoration', 'none');
+			console.log('nay');			
 		}
 	});
 	$('.button-collapse').sideNav('hide');
