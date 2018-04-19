@@ -1,24 +1,7 @@
-// $(document).ready(function() {
-// 	$('footer').load('templates/footer.html');
-// });
-
-// $(document).ready(function() {
-// 	if (navigator.userAgent.match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile/i)) {
-// 		$('header').load('templates/m.header.html', function() {
-// 			activeNav(window.location.hash);
-// 		});	
-// 	} else {
-// 		$('header').load('templates/header.html', function() {
-// 			activeNav(window.location.hash);
-// 		});	
-// 	}
-// });
-
 window.onhashchange = function() {
-    //$('div#loading').fadeIn();
-    $('div#overlay').fadeIn();
-    window.scrollTo(0,0);
-    activeNav(window.location.hash);
+	$('div#overlay').fadeIn();
+	window.scrollTo(0,0);
+	activeNav(window.location.hash);
 }
 
 window.onload = function() {
@@ -27,16 +10,14 @@ window.onload = function() {
 	$('div.collapsible-body > ul > *').css('padding-left', function (index, curValue) {
 		return parseInt(curValue, 10) + 16 + 'px';
 	});
-}
 
-if(!window.location.hash) {
-    window.location.hash = '#about';
+	activeNav(window.location.hash);
 }
 
 function putTabs() {
-    $('.tabbed').each(function(index) {
-        $(this).html('&nbsp;&nbsp;&nbsp;&nbsp;' + $(this).html());
-    });
+	$('.tabbed').each(function(index) {
+		$(this).html('&nbsp;&nbsp;&nbsp;&nbsp;' + $(this).html());
+	});
 }
 
 function isMobile() {
@@ -60,5 +41,3 @@ fetch(header).then(function(response) {
 }).catch(function(err) {
 	alert(err);
 });
-
-//activeNav(window.location.hash);

@@ -1,4 +1,8 @@
 function activeNav(hash) {
+	if(!hash) {
+		hash = '#about';
+	}
+
 	const name = 'Julius Vega | ';
 	$('a').css('text-decoration', '');
 	$('a[href=\'' + hash +'\']').css('text-decoration', 'underline');
@@ -50,7 +54,6 @@ function loadPage(prefix, page, title) {
 	}
 
 	$('main').load(prefix + page, function() {
-		//$('div#loading').fadeOut();
 		$('div#overlay').fadeOut();
 		putTabs();
 	});
