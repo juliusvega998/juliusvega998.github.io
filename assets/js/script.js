@@ -14,10 +14,15 @@ function headerInit() {
 	setCurrentPage(window.location.hash);
 }
 
+//TODO: convert to vanillaJS
 function putTabs() {
-	$('.tabbed').each(function(index) {
-		$(this).html('&nbsp;&nbsp;&nbsp;&nbsp;' + $(this).html());
+	let tabbed = document.querySelectorAll('tabbed');
+	tabbed.forEach(function(e, i) {
+		e.innerHTML += '&nbsp;&nbsp;&nbsp;&nbsp;'; 
 	});
+	// $('.tabbed').each(function(index) {
+	// 	$(this).html('&nbsp;&nbsp;&nbsp;&nbsp;' + $(this).html());
+	// });
 }
 
 function isMobile() {
@@ -56,8 +61,8 @@ function activeNav(hash) {
 
 	setCurrentPage(hash);
 
-	//TODO: convert to vanillaJS
 	const name = 'Julius Vega | ';
+	//TODO: convert to vanillaJS
 	$('.button-collapse').sideNav('hide');
 
 	switch(hash) {
