@@ -14,6 +14,29 @@
 // 	}
 // });
 
+$(document).ready(function() {
+    window.onhashchange = function() {
+        $('div#loading').fadeIn();
+        $('div#overlay').fadeIn();
+        window.scrollTo(0,0);
+        activeNav(window.location.hash);
+    }
+
+    if(!window.location.hash) {
+        window.location.hash = '#about';
+    }
+});
+
+function putTabs() {
+    $('.tabbed').each(function(index) {
+        $(this).html('&nbsp;&nbsp;&nbsp;&nbsp;' + $(this).html());
+    });
+}
+
+function isMobile() {
+	return navigator.userAgent.match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile/i);
+}
+
 fetch("/templates/footer.html").then(function(response) {
 	return response.text();
 }).then(function(body) {
@@ -22,10 +45,7 @@ fetch("/templates/footer.html").then(function(response) {
 	alert(err);
 });
 
-let header = 
-	(navigator.userAgent.match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile/i))? 
-	"templates/m.header.html": 
-	"templates/header.html";
+let header = (isMobile())? "templates/m.header.html": "templates/header.html";
 
 fetch(header).then(function(response) {
 	return response.text();
@@ -34,3 +54,5 @@ fetch(header).then(function(response) {
 }).catch(function(err) {
 	alert(err);
 });
+
+activeNav(window.location.hash);
