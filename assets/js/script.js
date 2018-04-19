@@ -1,18 +1,123 @@
-$(document).ready(function() {
-    window.onhashchange = function() {
-        $('div#loading').fadeIn();
-        $('div#overlay').fadeIn();
-        window.scrollTo(0,0);
-        activeNav(window.location.hash);
-    }
-
-    if(!window.location.hash) {
-        window.location.hash = '#about';
-    }
-});
-
-function putTabs() {
-    $('.tabbed').each(function(index) {
-        $(this).html('&nbsp;&nbsp;&nbsp;&nbsp;' + $(this).html());
-    });
+window.onhashchange = function() {
+	$('div#overlay').fadeIn();
+	window.scrollTo(0,0);
+	activeNav(window.location.hash);
 }
+
+//TODO: convert to vanillaJS
+function headerInit() {
+	$('.collapsible').collapsible();
+	$('.button-collapse').sideNav();
+	$('div.collapsible-body > ul > *').css('padding-left', function (index, curValue) {
+		return parseInt(curValue, 10) + 16 + 'px';
+	});
+	setCurrentPage(window.location.hash);
+}
+
+//TODO: convert to vanillaJS
+function putTabs() {
+	let tabbed = document.querySelectorAll('tabbed');
+	tabbed.forEach(function(e, i) {
+		e.innerHTML += '&nbsp;&nbsp;&nbsp;&nbsp;'; 
+	});
+	// $('.tabbed').each(function(index) {
+	// 	$(this).html('&nbsp;&nbsp;&nbsp;&nbsp;' + $(this).html());
+	// });
+}
+
+function isMobile() {
+	return navigator.userAgent.match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile/i);
+}
+
+function fetchPage(page, tag, callback) {
+	fetch(page).then(function(response) {
+		return response.text();
+	}).then(function(body) {
+		document.querySelector(tag).innerHTML = body;
+		if(callback) {
+			callback();
+		}
+	}).catch(function(err) {
+		alert(err);
+	});
+}
+
+function setCurrentPage(hash) {
+	let links = document.querySelectorAll('a');
+	links.forEach(function(l, i) {
+		if(l.getAttribute('href') == hash) {
+			l.setAttribute('style', 'text-decoration:underline;');
+		} else {
+			l.setAttribute('style', 'text-decoration:none;');
+		}
+	});
+}
+
+
+function activeNav(hash) {
+	if(!hash) {
+		hash = '#about';
+	}
+
+	setCurrentPage(hash);
+
+	const name = 'Julius Vega | ';
+	//TODO: convert to vanillaJS
+	$('.button-collapse').sideNav('hide');
+
+	switch(hash) {
+		case '#about': case '#': case '': 
+			loadPage('templates/', 'about.html', name + 'about_myself.page');
+			break;
+		case '#contact': 
+			loadPage('templates/', 'contact.html', name + 'contact_me.page');
+			break;
+		case '#diet':
+			loadPage('templates/projects/', 'diet.html', name + 'diet_optimizer.page');
+			break;
+		case '#nine':
+			loadPage('templates/projects/', 'nine.html', name + 'project_nine.page');
+			break;
+		case '#s1reborn':
+			loadPage('templates/projects/', 's1reborn.html', name + 'systemone_reborn.page');
+			break;
+		case '#twitch_annotator':
+			loadPage('templates/projects/', 'sp.html', name + 'twitch_annotator.page');
+			break;
+		case '#my_picture.jpg':
+			loadPage('templates/pictures/', 'my_picture.html', name + 'my_picture.jpg');
+			break;
+		case '#diet.png':
+			loadPage('templates/pictures/', 'diet.html', name + 'diet.png');
+			break;
+		case '#nine.png':
+			loadPage('templates/pictures/', 'nine.html', name + 'nine.png');
+			break;
+		case '#s1reborn.png':
+			loadPage('templates/pictures/', 's1reborn.html', name + 's1reborn.png');
+			break;
+		case '#twitch_annotator.png':
+			loadPage('templates/pictures/', 'sp.html', name + 'twitch_annotator.png');
+			break;
+		default: 
+			window.location.href = '404.html';
+	}
+}
+
+function loadPage(prefix, page, title) {
+	document.title = title;
+	if (isMobile() && !(prefix.includes('pictures') || page === 'contact.html')) {
+		page = 'm.' + page
+	}
+
+	fetchPage(prefix + page, 'main', function() {
+		$('div#overlay').fadeOut();
+		putTabs();
+	})
+}
+
+let header = (isMobile())? 'templates/m.header.html': 'templates/header.html';
+
+fetchPage('/templates/footer.html', 'footer');
+fetchPage(header, 'header', headerInit);
+activeNav(window.location.hash);
