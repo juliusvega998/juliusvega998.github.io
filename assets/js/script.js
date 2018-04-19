@@ -11,7 +11,7 @@ function headerInit() {
 	$('div.collapsible-body > ul > *').css('padding-left', function (index, curValue) {
 		return parseInt(curValue, 10) + 16 + 'px';
 	});
-	$('a[href=\'' + hash +'\']').css('text-decoration', 'underline');
+	$('a[href=\'' + window.location.hash +'\']').css('text-decoration', 'underline');
 }
 
 function putTabs() {
