@@ -22,23 +22,17 @@ function isMobile() {
 	return navigator.userAgent.match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile/i);
 }
 
-fetch("/templates/footer.html").then(function(response) {
-	return response.text();
-}).then(function(body) {
-	document.querySelector('footer').innerHTML = body;
-}).catch(function(err) {
-	alert(err);
-});
-
+function fetchPage(page, tag) {
+	fetch(page).then(function(response) {
+		return response.text();
+	}).then(function(body) {
+		document.querySelector(tag).innerHTML = body;
+	}).catch(function(err) {
+		alert(err);
+	});
+}
 let header = (isMobile())? "templates/m.header.html": "templates/header.html";
 
-fetch(header).then(function(response) {
-	return response.text();
-}).then(function(body) {
-	document.querySelector('header').innerHTML = body;
-	headerInit();
-}).catch(function(err) {
-	alert(err);
-});
-
+fetchPage("/templates/footer.html", "footer");
+fetchPage(header, "header");
 activeNav(window.location.hash);
