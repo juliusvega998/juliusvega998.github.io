@@ -45,8 +45,11 @@ function activeNav(hash) {
 
 	//TODO: convert to vanillaJS
 	const name = 'Julius Vega | ';
+	let currPage = document.querySelector('a[href=\'' + hash +'\']');
 	$('a').css('text-decoration', '');
-	document.querySelector('a[href=\'' + hash +'\']').setAttribute('text-decoration', 'underline');
+	if(currPage) {
+		currPage.setAttribute('text-decoration', 'underline');
+	}
 	$('.button-collapse').sideNav('hide');
 
 	switch(hash) {
