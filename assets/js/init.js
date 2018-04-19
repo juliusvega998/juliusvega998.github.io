@@ -14,18 +14,16 @@
 // 	}
 // });
 
-$(document).ready(function() {
-    window.onhashchange = function() {
-        $('div#loading').fadeIn();
-        $('div#overlay').fadeIn();
-        window.scrollTo(0,0);
-        activeNav(window.location.hash);
-    }
+window.onhashchange = function() {
+    //$('div#loading').fadeIn();
+    $('div#overlay').fadeIn();
+    window.scrollTo(0,0);
+    activeNav(window.location.hash);
+}
 
-    if(!window.location.hash) {
-        window.location.hash = '#about';
-    }
-});
+if(!window.location.hash) {
+    window.location.hash = '#about';
+}
 
 function putTabs() {
     $('.tabbed').each(function(index) {
@@ -55,4 +53,4 @@ fetch(header).then(function(response) {
 	alert(err);
 });
 
-activeNav(window.location.hash);
+//activeNav(window.location.hash);

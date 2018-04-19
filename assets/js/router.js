@@ -50,7 +50,7 @@ function loadPage(prefix, page, title) {
 	}
 
 	$('main').load(prefix + page, function() {
-		$('div#loading').fadeOut();
+		//$('div#loading').fadeOut();
 		$('div#overlay').fadeOut();
 		putTabs();
 	});
