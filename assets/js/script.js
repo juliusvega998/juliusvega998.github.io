@@ -44,7 +44,7 @@ function activeNav(hash) {
 
 	//TODO: convert to vanillaJS
 	const name = 'Julius Vega | ';
-
+	alert(hash);
 	$('a').css('text-decoration', '');
 	$('a[href=\'' + hash +'\']').css('text-decoration', 'underline');
 	$('.button-collapse').sideNav('hide');
