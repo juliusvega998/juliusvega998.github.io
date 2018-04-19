@@ -11,7 +11,7 @@ function headerInit() {
 	$('div.collapsible-body > ul > *').css('padding-left', function (index, curValue) {
 		return parseInt(curValue, 10) + 16 + 'px';
 	});
-	setCurrentPage();
+	setCurrentPage(window.location.hash);
 }
 
 function putTabs() {
@@ -37,7 +37,7 @@ function fetchPage(page, tag, callback) {
 	});
 }
 
-function setCurrentPage() {
+function setCurrentPage(hash) {
 	let links = document.querySelectorAll('a');
 	links.forEach(function(l, i) {
 		console.log(l.getAttribute('href'));
@@ -57,7 +57,7 @@ function activeNav(hash) {
 		hash = '#about';
 	}
 
-	setCurrentPage();
+	setCurrentPage(hash);
 
 	//TODO: convert to vanillaJS
 	const name = 'Julius Vega | ';
