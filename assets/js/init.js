@@ -4,14 +4,14 @@ window.onhashchange = function() {
 	activeNav(window.location.hash);
 }
 
-window.onload = function() {
+//window.onload = function() {}
+
+function headerInit() {
 	$('.collapsible').collapsible();
 	$(".button-collapse").sideNav();
 	$('div.collapsible-body > ul > *').css('padding-left', function (index, curValue) {
 		return parseInt(curValue, 10) + 16 + 'px';
 	});
-
-	activeNav(window.location.hash);
 }
 
 function putTabs() {
@@ -38,6 +38,9 @@ fetch(header).then(function(response) {
 	return response.text();
 }).then(function(body) {
 	document.querySelector('header').innerHTML = body;
+	headerInit();
 }).catch(function(err) {
 	alert(err);
 });
+
+activeNav(window.location.hash);
