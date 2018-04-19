@@ -45,10 +45,13 @@ function activeNav(hash) {
 
 	//TODO: convert to vanillaJS
 	const name = 'Julius Vega | ';
-	let currPage = document.querySelector('a[href=\'' + hash +'\']');
-	$('a').css('text-decoration', '');
-	if(currPage) {
-		currPage.setAttribute('text-decoration', 'underline');
+	let links = document.querySelectorAll('a');
+	links.forEach(l, i) {
+		if(l.getAttribute('href') == hash) {
+			l.setAttribute('text-decoration', 'underline');
+		} else {
+			l.setAttribute('text-decoration', 'none');
+		}
 	}
 	$('.button-collapse').sideNav('hide');
 
