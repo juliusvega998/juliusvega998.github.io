@@ -21,6 +21,14 @@ window.onhashchange = function() {
     activeNav(window.location.hash);
 }
 
+window.onload = function() {
+	$('.collapsible').collapsible();
+	$(".button-collapse").sideNav();
+	$('div.collapsible-body > ul > *').css('padding-left', function (index, curValue) {
+		return parseInt(curValue, 10) + 16 + 'px';
+	});
+}
+
 if(!window.location.hash) {
     window.location.hash = '#about';
 }
