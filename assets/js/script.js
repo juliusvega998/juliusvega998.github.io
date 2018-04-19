@@ -7,7 +7,7 @@ window.onhashchange = function() {
 //TODO: convert to vanillaJS
 function headerInit() {
 	$('.collapsible').collapsible();
-	$(".button-collapse").sideNav();
+	$('.button-collapse').sideNav();
 	$('div.collapsible-body > ul > *').css('padding-left', function (index, curValue) {
 		return parseInt(curValue, 10) + 16 + 'px';
 	});
@@ -36,16 +36,18 @@ function fetchPage(page, tag, callback) {
 	});
 }
 
-//TODO: convert to vanillaJS
+
 function activeNav(hash) {
 	if(!hash) {
 		hash = '#about';
 	}
 
+	//TODO: convert to vanillaJS
 	const name = 'Julius Vega | ';
-	$('a').css('text-decoration', '');
-	$('a[href=\'' + hash +'\']').css('text-decoration', 'underline');
-	$(".button-collapse").sideNav('hide');
+
+	$('header > a').css('text-decoration', '');
+	$('header > a[href=\'' + hash +'\']').css('text-decoration', 'underline');
+	$('.button-collapse').sideNav('hide');
 
 	switch(hash) {
 		case '#about': case '#': case '': 
@@ -92,14 +94,14 @@ function loadPage(prefix, page, title) {
 		page = 'm.' + page
 	}
 
-	fetchPage(prefix + page, "main", function() {
+	fetchPage(prefix + page, 'main', function() {
 		$('div#overlay').fadeOut();
 		putTabs();
 	})
 }
 
-let header = (isMobile())? "templates/m.header.html": "templates/header.html";
+let header = (isMobile())? 'templates/m.header.html': 'templates/header.html';
 
-fetchPage("/templates/footer.html", "footer");
-fetchPage(header, "header", headerInit);
+fetchPage('/templates/footer.html', 'footer');
+fetchPage(header, 'header', headerInit);
 activeNav(window.location.hash);

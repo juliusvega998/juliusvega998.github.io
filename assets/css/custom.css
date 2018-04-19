@@ -25,10 +25,6 @@ ul {
 	margin: 0 0 0 0;
 }
 
-.comment {
-	color: #999999;
-}
-
 p {
 	color: #EDF6EE;
 	margin: 0;
@@ -36,6 +32,10 @@ p {
 
 footer > p {
 	margin: 0;
+}
+
+.comment {
+	color: #999999;
 }
 
 span.emphasis {
