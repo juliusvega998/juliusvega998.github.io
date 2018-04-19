@@ -1,0 +1,26 @@
+/* Used in 404 and Under Construction HTML Pages */
+
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+
+body {
+	font-family: 'Inconsolata', sans-serif;
+	background-color: #031634;
+	color: #EDF6EE;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Inconsolata', sans-serif;
+	color: #CDB380;
+}
+
+a:link, a:visited {
+	color: #bab2b7;
+}
+
+div.container {
+	margin-top: 10%;
+}
+
+div.media {
+	margin-left: 10%;
+}
