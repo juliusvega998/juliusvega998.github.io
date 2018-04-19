@@ -11,7 +11,7 @@ function headerInit() {
 	$('div.collapsible-body > ul > *').css('padding-left', function (index, curValue) {
 		return parseInt(curValue, 10) + 16 + 'px';
 	});
-	$('a[href=\'' + window.location.hash +'\']').css('text-decoration', 'underline');
+	document.querySelector('a[href=\'' + window.location.hash +'\']').setAttribute('text-decoration', 'underline');
 }
 
 function putTabs() {
@@ -46,7 +46,7 @@ function activeNav(hash) {
 	//TODO: convert to vanillaJS
 	const name = 'Julius Vega | ';
 	$('a').css('text-decoration', '');
-	$('a[href=\'' + hash +'\']').css('text-decoration', 'underline');
+	document.querySelector('a[href=\'' + hash +'\']').setAttribute('text-decoration', 'underline');
 	$('.button-collapse').sideNav('hide');
 
 	switch(hash) {
