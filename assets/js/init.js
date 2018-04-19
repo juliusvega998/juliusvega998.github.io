@@ -4,8 +4,6 @@ window.onhashchange = function() {
 	activeNav(window.location.hash);
 }
 
-//window.onload = function() {}
-
 function headerInit() {
 	$('.collapsible').collapsible();
 	$(".button-collapse").sideNav();
