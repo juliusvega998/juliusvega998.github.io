@@ -1,6 +1,7 @@
 //To navigate on the next page when page hash is changed
 window.onhashchange = function() {
-	$('div#overlay').fadeIn();
+	//$('div#overlay').fadeIn();
+	document.getElementById('overlay').setAttribute('style', 'display: block;');
 	window.scrollTo(0,0);
 	activeNav(window.location.hash);
 }
@@ -8,11 +9,11 @@ window.onhashchange = function() {
 //To initialize the js needed for the header
 //TODO: convert to vanillaJS
 function headerInit() {
-	$('.collapsible').collapsible();
-	$('.button-collapse').sideNav();
-	$('div.collapsible-body > ul > *').css('padding-left', function (index, curValue) {
-		return parseInt(curValue, 10) + 16 + 'px';
-	});
+	// $('.collapsible').collapsible();
+	// $('.button-collapse').sideNav();
+	// $('div.collapsible-body > ul > *').css('padding-left', function (index, curValue) {
+	// 	return parseInt(curValue, 10) + 16 + 'px';
+	// });
 	setCurrentPage(window.location.hash);
 }
 
@@ -46,7 +47,7 @@ function activeNav(hash) {
 
 	const name = 'Julius Vega | ';
 	//TODO: convert to vanillaJS
-	$('.button-collapse').sideNav('hide');
+	// $('.button-collapse').sideNav('hide');
 
 	switch(hash) {
 		case '#about': case '#': case '': 
@@ -87,6 +88,20 @@ function activeNav(hash) {
 	}
 }
 
+let doShow = false;
+function toggleSideNav() {
+	if(isMobile()) {
+		if(doShow) {
+			document.getElementById('side-nav').setAttribute('style', 'display: block;');
+			document.getElementById('black-overlay').setAttribute('style', 'display: block;');
+		} else {
+			document.getElementById('side-nav').setAttribute('style', 'display: none;');
+			document.getElementById('black-overlay').setAttribute('style', 'display: none;');
+		}
+		doShow = !doShow
+	}
+}
+
 //Checks if the user uses mobile or desktop computer
 function isMobile() {
 	return navigator.userAgent.match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile/i);
@@ -102,7 +117,7 @@ function fetchPage(page, tag, callback) {
 			callback();
 		}
 	}).catch(function(err) {
-		alert(err);
+		console.log(err);
 	});
 }
 
@@ -114,7 +129,9 @@ function loadPage(prefix, page, title) {
 	}
 
 	fetchPage(prefix + page, 'main', function() {
-		$('div#overlay').fadeOut();
+		// $('div#overlay').fadeOut();
+		document.getElementById('overlay').setAttribute('style', 'display: none;');
+		toggleSideNav();
 		putTabs();
 	})
 }
@@ -124,4 +141,4 @@ let header = (isMobile())? 'templates/m.header.html': 'templates/header.html';
 fetchPage(header, 'header', headerInit);
 fetchPage('/templates/footer.html', 'footer');
 
-//activeNav(window.location.hash);
+activeNav(window.location.hash);
