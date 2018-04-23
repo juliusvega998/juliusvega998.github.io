@@ -57,10 +57,6 @@ div#loading > img {
 	filter: invert(100%);
 }
 
-div#affil > p {
-	margin: 0;
-}
-
 ul.side-nav {
 	background-color: #033649;
 	color: #CDB380;

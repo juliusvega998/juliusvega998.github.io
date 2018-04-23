@@ -124,4 +124,4 @@ let header = (isMobile())? 'templates/m.header.html': 'templates/header.html';
 fetchPage(header, 'header', headerInit);
 fetchPage('/templates/footer.html', 'footer');
 
-activeNav(window.location.hash);
+//activeNav(window.location.hash);
