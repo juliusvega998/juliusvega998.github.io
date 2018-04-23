@@ -1,9 +1,11 @@
+//To navigate on the next page when page hash is changed
 window.onhashchange = function() {
 	$('div#overlay').fadeIn();
 	window.scrollTo(0,0);
 	activeNav(window.location.hash);
 }
 
+//To initialize the js needed for the header
 //TODO: convert to vanillaJS
 function headerInit() {
 	$('.collapsible').collapsible();
@@ -14,34 +16,15 @@ function headerInit() {
 	setCurrentPage(window.location.hash);
 }
 
-//TODO: convert to vanillaJS
+//To indent the text when a menu is expanded in header
 function putTabs() {
 	let tabbed = document.querySelectorAll('tabbed');
 	tabbed.forEach(function(e, i) {
 		e.innerHTML += '&nbsp;&nbsp;&nbsp;&nbsp;'; 
 	});
-	// $('.tabbed').each(function(index) {
-	// 	$(this).html('&nbsp;&nbsp;&nbsp;&nbsp;' + $(this).html());
-	// });
 }
 
-function isMobile() {
-	return navigator.userAgent.match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile/i);
-}
-
-function fetchPage(page, tag, callback) {
-	fetch(page).then(function(response) {
-		return response.text();
-	}).then(function(body) {
-		document.querySelector(tag).innerHTML = body;
-		if(callback) {
-			callback();
-		}
-	}).catch(function(err) {
-		alert(err);
-	});
-}
-
+//underlines the current page in header
 function setCurrentPage(hash) {
 	let links = document.querySelectorAll('a');
 	links.forEach(function(l, i) {
@@ -53,7 +36,7 @@ function setCurrentPage(hash) {
 	});
 }
 
-
+//retrieves the html page depending on the hash
 function activeNav(hash) {
 	if(!hash) {
 		hash = '#about';
@@ -104,6 +87,26 @@ function activeNav(hash) {
 	}
 }
 
+//Checks if the user uses mobile or desktop computer
+function isMobile() {
+	return navigator.userAgent.match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile/i);
+}
+
+//fetches the html template
+function fetchPage(page, tag, callback) {
+	fetch(page).then(function(response) {
+		return response.text();
+	}).then(function(body) {
+		document.querySelector(tag).innerHTML = body;
+		if(callback) {
+			callback();
+		}
+	}).catch(function(err) {
+		alert(err);
+	});
+}
+
+//loads the page depending on the title
 function loadPage(prefix, page, title) {
 	document.title = title;
 	if (isMobile() && !(prefix.includes('pictures') || page === 'contact.html')) {
@@ -116,8 +119,9 @@ function loadPage(prefix, page, title) {
 	})
 }
 
+//loads the header and the footer
 let header = (isMobile())? 'templates/m.header.html': 'templates/header.html';
-
-fetchPage('/templates/footer.html', 'footer');
 fetchPage(header, 'header', headerInit);
+fetchPage('/templates/footer.html', 'footer');
+
 activeNav(window.location.hash);
