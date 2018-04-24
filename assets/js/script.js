@@ -1,18 +1,12 @@
 //To navigate on the next page when page hash is changed
 window.onhashchange = function() {
-	$('div#overlay').fadeIn();
+	document.getElementById('overlay').setAttribute('class', 'fade-in');
 	window.scrollTo(0,0);
 	activeNav(window.location.hash);
 }
 
 //To initialize the js needed for the header
-//TODO: convert to vanillaJS
 function headerInit() {
-	$('.collapsible').collapsible();
-	$('.button-collapse').sideNav();
-	$('div.collapsible-body > ul > *').css('padding-left', function (index, curValue) {
-		return parseInt(curValue, 10) + 16 + 'px';
-	});
 	setCurrentPage(window.location.hash);
 }
 
@@ -38,16 +32,13 @@ function setCurrentPage(hash) {
 
 //retrieves the html page depending on the hash
 function activeNav(hash) {
+	const name = 'Julius Vega | ';
+
 	if(!hash) {
 		hash = '#about';
 	}
 
 	setCurrentPage(hash);
-
-	const name = 'Julius Vega | ';
-	//TODO: convert to vanillaJS
-	$('.button-collapse').sideNav('hide');
-
 	switch(hash) {
 		case '#about': case '#': case '': 
 			loadPage('templates/', 'about.html', name + 'about_myself.page');
@@ -87,6 +78,20 @@ function activeNav(hash) {
 	}
 }
 
+let doShow = true;
+function toggleSideNav() {
+	if(isMobile()) {
+		if(doShow) {
+			document.getElementById('side-nav').setAttribute('class', 'going-in');
+			document.getElementById('black-overlay').setAttribute('style', 'display: block;');
+		} else {
+			document.getElementById('side-nav').setAttribute('class', 'going-out');
+			document.getElementById('black-overlay').setAttribute('style', 'display: none;');
+		}
+		doShow = !doShow
+	}
+}
+
 //Checks if the user uses mobile or desktop computer
 function isMobile() {
 	return navigator.userAgent.match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile/i);
@@ -102,7 +107,8 @@ function fetchPage(page, tag, callback) {
 			callback();
 		}
 	}).catch(function(err) {
-		alert(err);
+		console.log(err);
+		alert("There is an error loading the page. Try refreshing the page.");
 	});
 }
 
@@ -114,7 +120,10 @@ function loadPage(prefix, page, title) {
 	}
 
 	fetchPage(prefix + page, 'main', function() {
-		$('div#overlay').fadeOut();
+		document.getElementById('overlay').setAttribute('class', 'fade-out');
+		if(!doShow && isMobile()) {
+			toggleSideNav();
+		}
 		putTabs();
 	})
 }
