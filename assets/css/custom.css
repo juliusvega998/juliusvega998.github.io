@@ -14,6 +14,10 @@ body {
 	margin: 0;
 }
 
+main {
+	width: 100%;
+}
+
 h1, h2, h3, h4, h5, h6 {
 	font-size: 100%;
 	color: #CDB380;
@@ -217,6 +221,11 @@ div#black-overlay {
 	animation-duration: 500ms;
 	opacity: 0 !important;
 	visibility: hidden !important;
+}
+
+.responsive-img {
+	width: calc(100% - 32px);
+	height: auto;
 }
 
 @media only screen and (min-width: 993px) {
