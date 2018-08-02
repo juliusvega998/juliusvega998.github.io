@@ -43,6 +43,9 @@ function activeNav(hash) {
 		case '#about': case '#': case '': 
 			loadPage('templates/', 'about.html', name + 'about_myself.page');
 			break;
+		case '#past_employments':
+			loadPage('templates/', 'past_employments.html', name + 'twitch_annotator.png');
+			break;
 		case '#contact': 
 			loadPage('templates/', 'contact.html', name + 'contact_me.page');
 			break;
