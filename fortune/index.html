@@ -170,18 +170,15 @@
 	<script type="text/javascript">
 		let url = "https://lcs7srz2j0.execute-api.us-east-1.amazonaws.com/v1/fortune";
 		function generate() {
-			// $.ajax({
-			// 	method: "GET",
-			// 	mimeType: "application/json",
-			// 	url: url + "/fortune"
-			// }).done(function (data) {
-			// 	let msg = capitalize(data.message) + ".";
-			// 	$("input#fortune").val(msg);
-			// 	$("textarea#fortune").text(msg);
-			// });
-			let msg = "Hello World!";
-			$("input#fortune").val(msg);
-			$("textarea#fortune").text(msg);
+			$.ajax({
+				method: "GET",
+				mimeType: "application/json",
+				url: url + "/fortune"
+			}).done(function (data) {
+				let msg = capitalize(data.message) + ".";
+				$("input#fortune").val(msg);
+				$("textarea#fortune").text(msg);
+			});
 		}
 
 
