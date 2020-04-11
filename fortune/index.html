@@ -173,7 +173,7 @@
 			$.ajax({
 				method: "GET",
 				mimeType: "application/json",
-				url: url + "/fortune"
+				url: url
 			}).done(function (data) {
 				let msg = capitalize(data.message) + ".";
 				$("input#fortune").val(msg);
