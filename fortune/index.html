@@ -159,7 +159,7 @@
 		</div>
 		<div class="row wrapper">
 			<div class="col footer">
-				&copy; 2018 created by Julius Jireh B. Vega. <a href="../index.html">Click here to go back to main page.</a> Source code available <a href="https://github.com/juliusvega998/fortune">here</a>.
+				&copy; 2020 created by Julius Jireh B. Vega. <a href="../index.html">Click here to go back to main page.</a> Source code available <a href="https://github.com/juliusvega998/fortune">here</a>.
 			</div>
 		</div>
 	</div>
@@ -168,43 +168,35 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 	<script type="text/javascript">
-		let url = "https://fortune-riyymwfkda.now.sh";
+		let url = "https://lcs7srz2j0.execute-api.us-east-1.amazonaws.com/v1/fortune";
 		function generate() {
-			$.ajax({
-				method: "GET",
-				mimeType: "application/json",
-				url: url + "/fortune"
-			}).done(function (data) {
-				let msg = capitalize(data.message) + ".";
-				$("input#fortune").val(msg);
-				$("textarea#fortune").text(msg);
-			});
+			// $.ajax({
+			// 	method: "GET",
+			// 	mimeType: "application/json",
+			// 	url: url + "/fortune"
+			// }).done(function (data) {
+			// 	let msg = capitalize(data.message) + ".";
+			// 	$("input#fortune").val(msg);
+			// 	$("textarea#fortune").text(msg);
+			// });
+			let msg = "Hello World!";
+			$("input#fortune").val(msg);
+			$("textarea#fortune").text(msg);
 		}
 
-		function ping() {
-			$.ajax({
-				method: "GET",
-				mimeType: "application/json",
-				url: url + "/fortune"
-			}).done(function(data) {
-				$("#fortune").prop("disabled", false);
-				$("#fortune").prop("readonly", true);
-				$("input#fortune").val("");
-				$("textarea#fortune").text("What is your fortune of the day?");
-				$("button.generate").on('click', function() {
-					generate();
-				})
-			}).fail(function(jqXHR, err) {
-				ping();
-			});
-		}
 
 		function capitalize(string) {
 			return string.charAt(0).toUpperCase() + string.slice(1);
 		}
 
 		$(window).on('load', function() {
-			ping();
+			$("#fortune").prop("disabled", false);
+			$("#fortune").prop("readonly", true);
+			$("input#fortune").val("");
+			$("textarea#fortune").text("What is your fortune of the day?");
+			$("button.generate").on('click', function() {
+				generate();
+			})
 		})
 	</script>
 </body>
